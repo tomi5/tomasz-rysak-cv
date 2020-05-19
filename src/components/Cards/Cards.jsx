@@ -6,7 +6,7 @@ const Cards = () => {
         <LangContext.Consumer>
             {(lang) => (
 
-                <p>{lang}</p>
+                <p>To jest sekcja z kartami</p>
 
             )}
         </LangContext.Consumer>
