@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import LangContext from '../../../LangContext'
+import WorkDuties from './WorkDuties'
 
 
 
@@ -7,21 +8,28 @@ import LangContext from '../../../LangContext'
 class WorkItem extends Component {
 
     render() {
-
-        const props = this.props;
+        const workObj = this.props.work;
         const lang = this.context;
+        const { date, company, position, duties } = workObj[lang];
 
+
+        const workDuties = duties.map((duty, id) =>
+            <WorkDuties
+                key={id}
+                duty={duty}
+            />
+        )
 
         return (
             <div>
-                <p>Data</p>
-                <h4>Firma
-                    <span> - Pozycja</span>
+                <p>{date}</p>
+                <h4>{company}
+                    <span> - {position}</span>
                 </h4>
                 <ul>
-                    Obowiązki lista
+                    {workDuties}
                 </ul>
-            </div>
+            </div >
         );
     }
 }

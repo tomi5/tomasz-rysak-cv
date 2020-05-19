@@ -1,6 +1,6 @@
 import React from 'react';
 import LangContext from '../../LangContext'
-import WorksData from './WorksItem/WorksData';
+import worksData from './WorksItem/WorksData';
 import WorkItem from './WorksItem/WorkItem';
 
 
@@ -12,10 +12,10 @@ const Works = () => {
         en: "Selected professional experience",
     }
 
-    const workItem = WorksData.map(work =>
+    const workItem = worksData.map(work =>
         <WorkItem
             key={work.id}
-            project={work}
+            work={work}
         />
     )
 

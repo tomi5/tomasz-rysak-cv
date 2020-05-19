@@ -7,9 +7,8 @@ class ProjectItems extends Component {
 
     render() {
 
-        const props = this.props;
+        const { pl, en, techs, GitLink, LiveLink } = this.props.project;
         const lang = this.context;
-        const { pl, en, techs, GitLink, LiveLink } = props.project
 
         const TXT = {
             pl: "Użyte technologie: ",
