@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import LangButtons from '../Buttons/LangButtons'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
+import Main from '../Main/Main'
+import LangContext from '../../LangContext'
 
 
 
@@ -15,12 +17,14 @@ const App = () => {
 
     return (
         <>
-            <LangButtons handleChangeLang={handleChangeLang} />
-            <div>
-                <Header lang={lang} />
-                {/* <Main /> */}
-                <Footer lang={lang} />
-            </div>
+            <LangContext.Provider value={lang}>
+                <LangButtons handleChangeLang={handleChangeLang} />
+                <div>
+                    <Header lang={lang} />
+                    <Main />
+                    <Footer lang={lang} />
+                </div>
+            </LangContext.Provider>
         </>
 
     );
