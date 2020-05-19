@@ -3,8 +3,6 @@ import LangContext from '../../../LangContext'
 import WorkDuties from './WorkDuties'
 
 
-
-
 class WorkItem extends Component {
 
     render() {

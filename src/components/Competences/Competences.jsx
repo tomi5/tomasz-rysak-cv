@@ -1,18 +1,50 @@
-import React from 'react';
-import Projects from './CompetencesProjects';
-import Works from './CompetencesWorks';
-import Education from './CompetencesSchools';
-// import LangContext from '../../LangContext'
+import React, { Component } from 'react';
 
-const Competences = () => {
-    return (
-        <div>
-            <Projects />
-            <Works />
-            <Education />
-        </div>
+import CompetencesSection from './CompetencesSection';
 
-    );
+
+class Competences extends Component {
+
+    render() {
+
+        const competences = [
+            {
+                sectionName: 'projects',
+                sectionHeader: {
+                    pl: "Własne Projekty",
+                    en: "Own Projects",
+                }
+            },
+            {
+                sectionName: 'works',
+                sectionHeader: {
+                    pl: "Wybrane doświadczenie zawodowe",
+                    en: "Selected professional experience",
+                }
+            },
+            {
+                sectionName: 'education',
+                sectionHeader: {
+                    pl: "Wykształcenie",
+                    en: "Education",
+                }
+            },
+        ]
+
+        const competencesSection = competences.map((competence, id) =>
+            <CompetencesSection
+                key={id}
+                competence={competence}
+            />
+        )
+
+        return (
+            <div>
+                {competencesSection}
+            </div>
+        );
+    }
 }
 
 export default Competences;
+

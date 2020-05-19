@@ -7,8 +7,10 @@ class ProjectItems extends Component {
 
     render() {
 
-        const { pl, en, techs, GitLink, LiveLink } = this.props.project;
+        const { techs, GitLink, LiveLink } = this.props.project;
+        const projectObj = this.props.project
         const lang = this.context;
+        const { name, descr } = projectObj[lang];
 
         const TXT = {
             pl: "Użyte technologie: ",
@@ -18,8 +20,8 @@ class ProjectItems extends Component {
 
         return (
             <div>
-                <h4>{lang === "pl" ? pl.name : en.name}</h4>
-                <p>{lang === "pl" ? pl.descr : en.descr}</p>
+                <h4>{name}</h4>
+                <p>{descr}</p>
                 <p>{TXT[lang]}<span>{techs}</span></p>
                 <ProjectButtons
                     liveLink={LiveLink}
