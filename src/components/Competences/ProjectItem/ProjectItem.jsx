@@ -7,7 +7,7 @@ class ProjectItems extends Component {
 
     render() {
 
-        const { techs, GitLink, LiveLink } = this.props.project;
+        const { techs, GitHub, Live } = this.props.project;
         const projectObj = this.props.project
         const lang = this.context;
         const { name, descr } = projectObj[lang];
@@ -24,8 +24,8 @@ class ProjectItems extends Component {
                 <p>{descr}</p>
                 <p>{TXT[lang]}<span>{techs}</span></p>
                 <ProjectButtons
-                    liveLink={LiveLink}
-                    gitLink={GitLink}
+                    GitHub={GitHub}
+                    Live={Live}
                 />
             </div>);
     }

@@ -12,24 +12,16 @@ class Cards extends Component {
         const lang = this.context;
 
         const cardSection = highlightsData.map(highlight =>
-            <CardSection
+            < CardSection
                 key={highlight.id}
                 highlight={highlightsData}
             />
         )
 
-        // console.log('highlightsData:', highlightsData)
 
         return (
             <div>
-                <CardSection
-                />
-                <CardSection
-                />
-                <CardSection
-                />
-                <CardSection
-                />
+                <h1>test</h1>
             </div>
 
         );

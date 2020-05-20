@@ -7,6 +7,7 @@ const ProjectButtons = (props) => {
     const link = linksArr.map((link, id) => {
         const name = link[0];
         const href = link[1];
+
         return (
             <a
                 href={href}
@@ -18,6 +19,7 @@ const ProjectButtons = (props) => {
     });
 
     return <div>{link}</div>;
+
 }
 
 export default ProjectButtons;

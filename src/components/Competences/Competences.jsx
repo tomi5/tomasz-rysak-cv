@@ -1,40 +1,23 @@
 import React from 'react';
-
+import competencesSectionData from './competencesSectionData'
 import CompetenceSection from './CompetenceSection';
 
 const Competences = () => {
 
-    const competences = [
-        {
-            sectionName: 'projects',
-            sectionHeader: {
-                pl: "Własne Projekty",
-                en: "Own Projects",
-            }
-        },
-        {
-            sectionName: 'works',
-            sectionHeader: {
-                pl: "Wybrane doświadczenie zawodowe",
-                en: "Selected professional experience",
-            }
-        },
-        {
-            sectionName: 'education',
-            sectionHeader: {
-                pl: "Wykształcenie",
-                en: "Education",
-            }
-        },
-    ];
-    const competencesSection = competences.map((competence, id) =>
-        <CompetenceSection
-            key={id}
-            competence={competence}
-        />
-    )
+    const competencesSection = competencesSectionData.map((competence, id) => {
 
-    return <div>{competencesSection}</div>;
+        const { sectionType, sectionName, sectionHeader } = competence;
+        return <CompetenceSection
+            key={id}
+            sectionType={sectionType}
+            sectionName={sectionName}
+            sectionHeader={sectionHeader}
+        />
+    })
+
+    console.log('competencesSection:', competencesSection)
+
+    return <div className="main">{competencesSection}</div>;
 }
 
 export default Competences;
