@@ -4,13 +4,13 @@ const highlightsData = [{
             pl: 'Kontakt',
             en: 'Contact',
         },
-        sectionItem: [{
+        sectionItem: {
             tel: '+48 503 58 34 37',
             email: 'tomaszrysak@o2.pl',
             gitHub: 'github.com/tomi5',
             linkedIn: 'linkedin.com/in/tomasz-rysak',
             address: 'Skawina, woj. małopolskie'
-        }]
+        }
     },
     {
         sectionName: 'skills',
@@ -61,10 +61,10 @@ const highlightsData = [{
             pl: 'Języki',
             en: 'Languages',
         },
-        sectionItem: [{
+        sectionItem: {
             pl: ['język angielski - poziom B2', 'język polski - język ojczysty'],
             en: ['English - upper intermediate', 'Polish - native speaker'],
-        }],
+        },
     },
     {
         sectionName: 'hobby',
@@ -72,10 +72,10 @@ const highlightsData = [{
             pl: 'Zainteresowania',
             en: 'Passions',
         },
-        sectionItem: [{
+        sectionItem: {
             pl: ['podróże, turystyka ekstremalna i kwalifikowana', 'wyszukiwanie tanich połączeń lotniczych', 'fotografia przyrodnicza', 'uprawianie sportów: piłka nożna, muay-thai, snowboarding', 'książki i czasopisma turystyczno-podróżnicze', 'giełda papierów wartościowych'],
             en: ['traveling, extreme and qualified tourism', 'low cost flight search', 'nature photography', 'sports: football, muay-thai, snowboarding', 'travel books and magazines', 'stock exchange'],
-        }],
+        },
     },
 ];
 

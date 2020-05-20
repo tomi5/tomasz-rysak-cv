@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import LangContext from '../../LangContext'
-import Item from './Item'
+
 
 
 
 class CardSections extends Component {
 
     render() {
-        const lang = this.context;
 
         const { sectionName, sectionHeader, sectionItem } = this.props.card
 
-        // const item = sectionItem.map((item, id) =>
-        //     <Item
-        //         key={id}
-        //         item={item}
-        //     />
-        // )
+
+
+        if (sectionName === 'contact') {
+            const contactValuesArr = Object.values(sectionItem);
+            contactValuesArr.map((value, id) =>
+                console.log(value))
+
+
+        }
 
 
         return (
@@ -26,7 +28,19 @@ class CardSections extends Component {
                         <h3>{sectionHeader[lang]}</h3>
                         <div>
                             <ul>
-                                item
+                                {
+                                    sectionItem[lang] ? (
+                                        sectionItem[lang].map((item, id) =>
+                                            <li key={id}>{item}</li>
+                                        ) // set li items for hobby and language section
+                                    ) : (
+
+                                            Object.values(sectionItem).map((value, id) =>
+                                                <li key={id}>{value}</li>
+                                            )
+
+                                        )
+                                }
                             </ul>
                         </div>
                     </section>
@@ -36,7 +50,7 @@ class CardSections extends Component {
         );
     }
 }
-CardSections.contextType = LangContext;
+
 
 
 
