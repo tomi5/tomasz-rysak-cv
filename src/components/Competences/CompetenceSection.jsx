@@ -10,8 +10,7 @@ import EducationItem from './EducationItem/EducationItem';
 
 const CompetenceSection = (props) => {
 
-
-    const { sectionName, sectionType, sectionHeader } = props;
+    const { sectionName, sectionHeader } = props.competence;
 
     const projectItem = projectsData.map(project =>
         <ProjectItem
