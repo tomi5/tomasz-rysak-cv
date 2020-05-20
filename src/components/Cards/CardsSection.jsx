@@ -1,56 +1,57 @@
 import React, { Component } from 'react';
 import LangContext from '../../LangContext'
+import ContactItem from './ContactItem'
 
 
 
 
 class CardSections extends Component {
 
-    render() {
 
-        const { sectionName, sectionHeader, sectionItem } = this.props.card
-
+    getSectionItem = (item, sectionName, lang) => {
 
 
-        if (sectionName === 'contact') {
-            const contactValuesArr = Object.values(sectionItem);
-            contactValuesArr.map((value, id) =>
-                console.log(value))
+        switch (sectionName) {
+            case "contact":
+                return item.map((item, id) =>
+                    <ContactItem
+                        key={id}
+                        item={item}
+                    >lorem</ContactItem>
+                );
+            case "skills":
+                return <li>test</li>
+            case "languages":
+            case "hobby":
+                return item[lang].map((item, id) =>
+                    <li key={id}>{item}</li>
+                );
 
-
+            default:
+                return
         }
+    };
 
+
+
+    render() {
+        const lang = this.context;
+        const { sectionName, sectionHeader, sectionItem } = this.props.card;
 
         return (
-            <LangContext.Consumer>
-                {(lang) => (
-                    <section>
-                        <h3>{sectionHeader[lang]}</h3>
-                        <div>
-                            <ul>
-                                {
-                                    sectionItem[lang] ? (
-                                        sectionItem[lang].map((item, id) =>
-                                            <li key={id}>{item}</li>
-                                        ) // set li items for hobby and language section
-                                    ) : (
-
-                                            Object.values(sectionItem).map((value, id) =>
-                                                <li key={id}>{value}</li>
-                                            )
-
-                                        )
-                                }
-                            </ul>
-                        </div>
-                    </section>
-                )}
-
-            </LangContext.Consumer >
+            <section>
+                <h3>{sectionHeader[lang]}</h3>
+                <div>
+                    <ul>
+                        {this.getSectionItem(sectionItem, sectionName, lang)}
+                    </ul>
+                </div>
+            </section>
         );
     }
 }
 
+CardSections.contextType = LangContext;
 
 
 

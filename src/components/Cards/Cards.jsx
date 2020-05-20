@@ -9,14 +9,14 @@ import highlightsData from './highlightsData'
 const Cards = () => {
 
 
-    const cardsSection = highlightsData.map((card, id) =>
+
+
+    return <div>{highlightsData.map((card, id) =>
         <CardsSection
             key={id}
             card={card}
         />
-    )
-
-    return <div>{cardsSection}</div>;
+    )}</div>;
 }
 
 export default Cards;
