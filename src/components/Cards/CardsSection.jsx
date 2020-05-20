@@ -1,63 +1,27 @@
-import React, { Component } from 'react';
+import React from 'react';
 import LangContext from '../../LangContext'
-import ContactItem from './ContactItem'
-import SkillsItems from './SkillsItems'
+import CardItems from './CardItems'
 
+const CardSections = (props) => {
+    const { sectionName, sectionHeader, sectionItem } = props.card;
 
-
-class CardSections extends Component {
-
-
-    getSectionItem = (item, sectionName, lang) => {
-
-
-        switch (sectionName) {
-            case "contact":
-                return item.map((item, id) =>
-                    <ContactItem
-                        key={id}
-                        item={item}
-                    />
-                );
-            case "skills":
-                return item.map((item, id) =>
-                    <SkillsItems
-                        key={id}
-                        item={item}
-                        lang={lang}
-                    />
-                );
-            case "languages":
-            case "hobby":
-                return item[lang].map((item, id) =>
-                    <li key={id}>{item}</li>
-                );
-
-            default:
-                return
-        }
-    };
-
-
-
-    render() {
-        const lang = this.context;
-        const { sectionName, sectionHeader, sectionItem } = this.props.card;
-
-        return (
-            <section>
-                <h3>{sectionHeader[lang]}</h3>
-                <div>
-                    <ul>
-                        {this.getSectionItem(sectionItem, sectionName, lang)}
-                    </ul>
-                </div>
-            </section>
-        );
-    }
+    return (
+        <LangContext.Consumer>
+            {(lang) => (
+                <section>
+                    <h3>{sectionHeader[lang]}</h3>
+                    <div>
+                        <ul>
+                            <CardItems
+                                sectionName={sectionName}
+                                sectionItem={sectionItem}
+                            />
+                        </ul>
+                    </div>
+                </section>
+            )}
+        </LangContext.Consumer>
+    );
 }
-
-CardSections.contextType = LangContext;
-
 
 export default CardSections;
