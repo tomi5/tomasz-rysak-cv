@@ -4,7 +4,6 @@ import ContactItem from './ContactItem'
 
 
 
-
 class CardSections extends Component {
 
 
@@ -52,8 +51,6 @@ class CardSections extends Component {
 }
 
 CardSections.contextType = LangContext;
-
-
 
 
 export default CardSections;

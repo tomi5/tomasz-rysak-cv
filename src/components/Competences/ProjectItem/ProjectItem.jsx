@@ -27,7 +27,8 @@ class ProjectItems extends Component {
                     GitHub={GitHub}
                     Live={Live}
                 />
-            </div>);
+            </div>
+        );
     }
 }
 

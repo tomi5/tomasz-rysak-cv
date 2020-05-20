@@ -10,14 +10,13 @@ class EducationItem extends Component {
         const educationObj = this.props.education;
         const { date, school, spec, degree } = educationObj[lang];
 
-
         return (
             <div>
                 <p>{date}</p>
                 <h4>{school}</h4>
                 <p>{spec}</p>
                 <p>{degree}</p>
-            </div >
+            </div>
         );
     }
 }

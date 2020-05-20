@@ -6,14 +6,11 @@ import Main from '../Main/Main'
 import LangContext from '../../LangContext'
 
 
-
 const App = () => {
 
     const [lang, setLang] = useState('pl');
 
-    const handleChangeLang = (language) => {
-        setLang(language)
-    }
+    const handleChangeLang = language => setLang(language);
 
     return (
         <>
