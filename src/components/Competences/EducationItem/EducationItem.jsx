@@ -6,8 +6,8 @@ class EducationItem extends Component {
 
     render() {
 
-        const educationObj = this.props.education;
         const lang = this.context;
+        const educationObj = this.props.education;
         const { date, school, spec, degree } = educationObj[lang];
 
 

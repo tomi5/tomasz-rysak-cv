@@ -9,8 +9,8 @@ const projectsData = [{
             descr: "Polish and English version. Adapted to print in A4 page size.",
         },
         techs: "React.js",
-        GitLink: "https://github.com/tomi5/Tomasz_Rysak_CV",
-        LiveLink: "https://tomi5.github.io/Tomasz_Rysak_CV/",
+        GitHub: "https://github.com/tomi5/Tomasz_Rysak_CV",
+        Live: "https://tomi5.github.io/Tomasz_Rysak_CV/",
     },
     {
         id: 2,
@@ -23,8 +23,8 @@ const projectsData = [{
             descr: "Commercial website for landscape architecture company",
         },
         techs: "HTML5 - CSS3 (Sass, flexbox) - JavaScript - CMS (CMS MADE SIMPLE) - PHP (SMARTY) - RWD",
-        GitLink: "https://github.com/tomi5/LandLab",
-        LiveLink: "https://landlab.pl/",
+        GitHub: "https://github.com/tomi5/LandLab",
+        Live: "https://landlab.pl/",
     },
     {
         id: 3,
@@ -37,8 +37,8 @@ const projectsData = [{
             descr: "My first training project to practice JavaScript.",
         },
         techs: "HTML5 - CSS3 (flexbox) - JavaScript - RWD",
-        GitLink: "https://github.com/tomi5/interactive_visited_countries_map",
-        LiveLink: "https://tomi5.github.io/interactive_visited_countries_map/",
+        GitHub: "https://github.com/tomi5/interactive_visited_countries_map",
+        Live: "https://tomi5.github.io/interactive_visited_countries_map/",
     },
     {
         id: 4,
@@ -51,8 +51,8 @@ const projectsData = [{
             descr: "Website design and coding. Website prepared for a friend's company",
         },
         techs: "HTML5 - CSS3 - jQuery - RWD",
-        GitLink: "https://github.com/tomi5/hydrogeopol",
-        LiveLink: "https://tomi5.github.io/hydrogeopol/",
+        GitHub: "https://github.com/tomi5/hydrogeopol",
+        Live: "https://tomi5.github.io/hydrogeopol/",
     },
     {
         id: 5,
@@ -65,8 +65,8 @@ const projectsData = [{
             descr: "Bootstrap 4 training project.",
         },
         techs: "HTML5 - Bootstrap 4 - jQuery - LightBox",
-        GitLink: "https://github.com/tomi5/travel_service",
-        LiveLink: "https://tomi5.github.io/travel_service/",
+        GitHub: "https://github.com/tomi5/travel_service",
+        Live: "https://tomi5.github.io/travel_service/",
     },
     {
         id: 6,
@@ -79,8 +79,8 @@ const projectsData = [{
             descr: "My first RWD single page website converted from PSD.",
         },
         techs: "HTML5 - CSS3 (flexbox) - jQuery - Photoshop (slice tool)",
-        GitLink: "https://github.com/tomi5/cuda_single_pages",
-        LiveLink: "https://tomi5.github.io/cuda_single_pages//",
+        GitHub: "https://github.com/tomi5/cuda_single_pages",
+        Live: "https://tomi5.github.io/cuda_single_pages//",
     },
 
 

@@ -1,23 +1,23 @@
 import React from 'react'
 
 
-const ProjectButtons = ({ liveLink, gitLink }) => {
+const ProjectButtons = (props) => {
 
-
-    return (
-        <div>
+    const linksArr = Object.entries(props);
+    const link = linksArr.map((link, id) => {
+        const name = link[0];
+        const href = link[1];
+        return (
             <a
-                href={gitLink}
-
-                rel="noopener noreferrer"
-            >GitHub</a>
-            <a
-                href={liveLink}
+                href={href}
+                key={id}
                 target="_blank"
                 rel="noopener noreferrer"
-            >Live</a>
-        </div>
-    );
+            >{name}</a>
+        )
+    });
+
+    return <div>{link}</div>;
 }
 
 export default ProjectButtons;

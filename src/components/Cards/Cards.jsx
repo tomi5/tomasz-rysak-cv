@@ -1,16 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 import LangContext from '../../LangContext'
+import CardSection from './CardSection';
+import highlightsData from './highlightsData';
 
-const Cards = () => {
-    return (
-        <LangContext.Consumer>
-            {(lang) => (
 
-                <p>To jest sekcja z kartami</p>
+class Cards extends Component {
 
-            )}
-        </LangContext.Consumer>
-    );
+
+    render() {
+
+        const lang = this.context;
+
+        const cardSection = highlightsData.map(highlight =>
+            <CardSection
+                key={highlight.id}
+                highlight={highlightsData}
+            />
+        )
+
+        // console.log('highlightsData:', highlightsData)
+
+        return (
+            <div>
+                <CardSection
+                />
+                <CardSection
+                />
+                <CardSection
+                />
+                <CardSection
+                />
+            </div>
+
+        );
+    }
 }
+
+Cards.contextType = LangContext;
 
 export default Cards;
