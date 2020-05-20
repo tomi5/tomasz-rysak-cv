@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LangContext from '../../LangContext'
 import ContactItem from './ContactItem'
+import SkillsItems from './SkillsItems'
 
 
 
@@ -16,10 +17,16 @@ class CardSections extends Component {
                     <ContactItem
                         key={id}
                         item={item}
-                    >lorem</ContactItem>
+                    />
                 );
             case "skills":
-                return <li>test</li>
+                return item.map((item, id) =>
+                    <SkillsItems
+                        key={id}
+                        item={item}
+                        lang={lang}
+                    />
+                );
             case "languages":
             case "hobby":
                 return item[lang].map((item, id) =>

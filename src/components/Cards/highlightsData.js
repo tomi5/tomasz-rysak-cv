@@ -63,7 +63,7 @@ const highlightsData = [{
             id: 2,
             name: 'techLearning',
             itemHeader: {
-                pl: 'Technologie, z którymi pracuję:',
+                pl: 'Aktualnie poznaję:',
                 en: "I'm learning:",
             },
             skillsItem: ['TypeScript', 'GatsbyJS + GraphQL']

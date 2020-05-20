@@ -21,7 +21,8 @@ const ContactItem = (props) => {
                     )
             }
 
-        </li>);
+        </li>
+    );
 }
 
 export default ContactItem
