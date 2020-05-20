@@ -10,14 +10,6 @@ class WorkItem extends Component {
         const lang = this.context;
         const { date, company, position, duties } = workObj[lang];
 
-
-        const workDuties = duties.map((duty, id) =>
-            <WorkDuties
-                key={id}
-                duty={duty}
-            />
-        )
-
         return (
             <div>
                 <p>{date}</p>
@@ -25,7 +17,12 @@ class WorkItem extends Component {
                     <span> - {position}</span>
                 </h4>
                 <ul>
-                    {workDuties}
+                    {duties.map((duty, id) =>
+                        <WorkDuties
+                            key={id}
+                            duty={duty}
+                        />
+                    )}
                 </ul>
             </div >
         );

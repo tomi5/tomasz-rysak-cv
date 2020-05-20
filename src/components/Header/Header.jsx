@@ -15,11 +15,13 @@ const Header = ({ lang }) => {
         en: "portrait photo"
     };
 
+    const leftMark = "<"
+    const rightMark = "/>"
 
     return (
         <header>
             <h1>Tomasz Rysak</h1>
-            <h2>&lt; front-end developer &#47;&gt;</h2>
+            <h2>{`${leftMark} front-end developer ${rightMark}`}</h2>
             <p>{ABOUT_TEXT[lang]}</p>
 
             <div className="picture-container">

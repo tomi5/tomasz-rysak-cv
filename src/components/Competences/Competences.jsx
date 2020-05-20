@@ -27,14 +27,18 @@ const Competences = () => {
             }
         },
     ];
-    const competencesSection = competences.map((competence, id) =>
-        <CompetenceSection
-            key={id}
-            competence={competence}
-        />
-    )
 
-    return <div>{competencesSection}</div>;
+
+    return (
+        <div>
+            {competences.map((competence, id) =>
+                <CompetenceSection
+                    key={id}
+                    competence={competence}
+                />
+            )}
+        </div>
+    );
 }
 
 export default Competences;

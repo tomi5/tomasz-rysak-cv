@@ -33,7 +33,7 @@ const CompetenceSection = (props) => {
         />
     )
 
-    const getSectionItem = (sectionName) => {
+    const makeSectionItem = (sectionName) => {
         switch (sectionName) {
             case "projects":
                 return projectItem;
@@ -52,7 +52,7 @@ const CompetenceSection = (props) => {
                 <section>
                     <span className="competence__icon fas fa-user-tie" aria-hidden="true"></span>
                     <h3>{sectionHeader[lang]}</h3>
-                    {getSectionItem(sectionName)}
+                    {makeSectionItem(sectionName)}
                 </section>
             )}
 
