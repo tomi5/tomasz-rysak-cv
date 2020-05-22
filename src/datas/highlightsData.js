@@ -1,115 +1,115 @@
 const highlightsData = [{
-        sectionName: 'contact',
-        sectionHeader: {
-            pl: 'Kontakt',
-            en: 'Contact',
-        },
-        sectionItem: [{
-                id: 1,
-                name: 'telephone',
-                value: '+48 503 58 34 37',
-                href: 'tel:0048503583437',
-                ariaLabel: 'tel',
-                icon: 'fas fa-phone-volume',
-            },
-            {
-                id: 2,
-                name: 'email',
-                value: 'tomaszrysak@o2.pl',
-                href: 'mailto:tomaszrysak@o2.pl',
-                ariaLabel: 'email',
-                icon: 'far fa-envelope',
-            },
-            {
-                id: 3,
-                name: 'gitHub',
-                value: 'github.com/tomi5',
-                href: 'https://github.com/tomi5',
-                ariaLabel: 'gitHub logo',
-                icon: 'fab fa-github',
-            },
-            {
-                id: 4,
-                name: 'linkedIn',
-                value: 'linkedin.com/in/tomasz-rysak',
-                href: 'https://www.linkedin.com/in/tomasz-rysak/',
-                ariaLabel: 'linkedIn logo',
-                icon: 'fab fa-linkedin',
-            },
-            {
-                id: 5,
-                name: 'address',
-                value: 'Skawina, woj. małopolskie',
-                ariaLabel: 'adres',
-                icon: 'fas fa-map-marker-alt',
-            }
-        ]
+  sectionName: 'contact',
+  sectionHeader: {
+    pl: 'Kontakt',
+    en: 'Contact',
+  },
+  sectionItem: [{
+    id: 1,
+    name: 'telephone',
+    value: '+48 503 58 34 37',
+    href: 'tel:0048503583437',
+    ariaLabel: 'tel',
+    icon: 'fas fa-phone-volume',
+  },
+  {
+    id: 2,
+    name: 'email',
+    value: 'tomaszrysak@o2.pl',
+    href: 'mailto:tomaszrysak@o2.pl',
+    ariaLabel: 'email',
+    icon: 'far fa-envelope',
+  },
+  {
+    id: 3,
+    name: 'gitHub',
+    value: 'github.com/tomi5',
+    href: 'https://github.com/tomi5',
+    ariaLabel: 'gitHub logo',
+    icon: 'fab fa-github',
+  },
+  {
+    id: 4,
+    name: 'linkedIn',
+    value: 'linkedin.com/in/tomasz-rysak',
+    href: 'https://www.linkedin.com/in/tomasz-rysak/',
+    ariaLabel: 'linkedIn logo',
+    icon: 'fab fa-linkedin',
+  },
+  {
+    id: 5,
+    name: 'address',
+    value: 'Skawina, woj. małopolskie',
+    ariaLabel: 'adres',
+    icon: 'fas fa-map-marker-alt',
+  },
+  ],
+},
+{
+  sectionName: 'skills',
+  sectionHeader: {
+    pl: 'Umiejętności',
+    en: 'Technical skills',
+  },
+  sectionItem: [{
+    id: 1,
+    name: 'techUse',
+    itemHeader: {
+      pl: 'Technologie, z którymi pracuję:',
+      en: 'Technologies I use:',
     },
-    {
-        sectionName: 'skills',
-        sectionHeader: {
-            pl: 'Umiejętności',
-            en: 'Technical skills',
-        },
-        sectionItem: [{
-            id: 1,
-            name: 'techUse',
-            itemHeader: {
-                pl: 'Technologie, z którymi pracuję:',
-                en: 'Technologies I use:',
-            },
-            skillsItem: ['HTML 5', 'CSS3 (flexbox, grid, BEM)', 'Sass', 'JavaScript', 'React.js', 'jQuery', 'Bootstrap 4', 'RWD', 'Git', 'PHP (SMARTY)']
-        }, {
-            id: 2,
-            name: 'techLearning',
-            itemHeader: {
-                pl: 'Aktualnie poznaję:',
-                en: "I'm learning:",
-            },
-            skillsItem: ['TypeScript', 'GatsbyJS + GraphQL']
-        }, {
-            id: 3,
-            name: 'techToKnow',
-            itemHeader: {
-                pl: 'Chcę poznać:',
-                en: "I want to know:",
-            },
-            skillsItem: ['Node.js', 'MongoDB', 'Python']
-        }, {
-            id: 4,
-            name: 'otherAbilites',
-            itemHeader: {
-                pl: 'Pozostałe umiejętności:',
-                en: 'Others Abilities:',
-            },
-            skillsItem: {
-                pl: ['biegła obsługa CorelDraw', 'podstawy Visual Basis oraz b.dobra znajomość Excela', 'Photoshop (cięcie PSD oraz podstawowa obróbka grafiki)'],
-                en: ['fluent in CorelDraw', 'basic in Visual Basis and fluent in Excel', 'Photoshop (PSD slicing and basic image processing)'],
-            }
-        }],
+    skillsItem: ['HTML 5', 'CSS3 (flexbox, grid, BEM)', 'Sass', 'JavaScript', 'React.js', 'jQuery', 'Bootstrap 4', 'RWD', 'Git', 'PHP (SMARTY)'],
+  }, {
+    id: 2,
+    name: 'techLearning',
+    itemHeader: {
+      pl: 'Aktualnie poznaję:',
+      en: "I'm learning:",
     },
-    {
-        sectionName: 'languages',
-        sectionHeader: {
-            pl: 'Języki',
-            en: 'Languages',
-        },
-        sectionItem: {
-            pl: ['język angielski - poziom B2', 'język polski - język ojczysty'],
-            en: ['English - upper intermediate', 'Polish - native speaker'],
-        },
+    skillsItem: ['TypeScript', 'GatsbyJS + GraphQL'],
+  }, {
+    id: 3,
+    name: 'techToKnow',
+    itemHeader: {
+      pl: 'Chcę poznać:',
+      en: 'I want to know:',
     },
-    {
-        sectionName: 'hobby',
-        sectionHeader: {
-            pl: 'Zainteresowania',
-            en: 'Passions',
-        },
-        sectionItem: {
-            pl: ['podróże, turystyka ekstremalna i kwalifikowana', 'wyszukiwanie tanich połączeń lotniczych', 'fotografia przyrodnicza', 'uprawianie sportów: piłka nożna, muay-thai, snowboarding', 'książki i czasopisma turystyczno-podróżnicze', 'giełda papierów wartościowych'],
-            en: ['traveling, extreme and qualified tourism', 'low cost flight search', 'nature photography', 'sports: football, muay-thai, snowboarding', 'travel books and magazines', 'stock exchange'],
-        },
+    skillsItem: ['Node.js', 'MongoDB', 'Python'],
+  }, {
+    id: 4,
+    name: 'otherAbilites',
+    itemHeader: {
+      pl: 'Pozostałe umiejętności:',
+      en: 'Others Abilities:',
     },
+    skillsItem: {
+      pl: ['biegła obsługa CorelDraw', 'podstawy Visual Basis oraz b.dobra znajomość Excela', 'Photoshop (cięcie PSD oraz podstawowa obróbka grafiki)'],
+      en: ['fluent in CorelDraw', 'basic in Visual Basis and fluent in Excel', 'Photoshop (PSD slicing and basic image processing)'],
+    },
+  }],
+},
+{
+  sectionName: 'languages',
+  sectionHeader: {
+    pl: 'Języki',
+    en: 'Languages',
+  },
+  sectionItem: {
+    pl: ['język angielski - poziom B2', 'język polski - język ojczysty'],
+    en: ['English - upper intermediate', 'Polish - native speaker'],
+  },
+},
+{
+  sectionName: 'hobby',
+  sectionHeader: {
+    pl: 'Zainteresowania',
+    en: 'Passions',
+  },
+  sectionItem: {
+    pl: ['podróże, turystyka ekstremalna i kwalifikowana', 'wyszukiwanie tanich połączeń lotniczych', 'fotografia przyrodnicza', 'uprawianie sportów: piłka nożna, muay-thai, snowboarding', 'książki i czasopisma turystyczno-podróżnicze', 'giełda papierów wartościowych'],
+    en: ['traveling, extreme and qualified tourism', 'low cost flight search', 'nature photography', 'sports: football, muay-thai, snowboarding', 'travel books and magazines', 'stock exchange'],
+  },
+},
 ];
 
-export default highlightsData
+export default highlightsData;
