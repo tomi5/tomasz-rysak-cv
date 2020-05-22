@@ -4,6 +4,7 @@ import gbFlag from '../../assets/images/gb.png';
 
 
 const LangButtons = (props) => (
+    
     <>
         <button
             onClick={props.handleChangeLang.bind(this, "pl")}

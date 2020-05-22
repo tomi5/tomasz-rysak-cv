@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LangContext from '../../../LangContext'
-import WorkDuties from './WorkDuties'
+import LangContext from '../../../../LangContext'
+import WorkDuties from './WorkDuties/WorkDuties'
 
 
 class WorkItem extends Component {

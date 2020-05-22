@@ -1,13 +1,13 @@
 import React from 'react';
-import Cards from '../Cards/Cards';
-import Competences from '../Competences/Competences';
+import Highlights from './Highlights/Hightlights';
+import Competences from './Competences/Competences';
 
 
 
 const Main = () => {
     return (
         <>
-            <Cards />
+            <Highlights />
             <Competences />
         </>
     );

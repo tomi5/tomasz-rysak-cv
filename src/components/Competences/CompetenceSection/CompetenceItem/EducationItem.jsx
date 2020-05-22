@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import LangContext from '../../../LangContext'
+import LangContext from '../../../../LangContext'
 
 
 class EducationItem extends Component {

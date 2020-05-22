@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import LangContext from '../../../LangContext'
-import ProjectButtons from '../../Buttons/ProjectButtons'
+import LangContext from '../../../../LangContext'
+import ProjectButtons from '../../../Buttons/ProjectButtons'
 
 
 class ProjectItems extends Component {

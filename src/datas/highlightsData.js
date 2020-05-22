@@ -58,7 +58,7 @@ const highlightsData = [{
                 pl: 'Technologie, z którymi pracuję:',
                 en: 'Technologies I use:',
             },
-            skillsItem: ['HTML 5', 'CSS3 (flexbox, grid, BEM]', 'Sass', 'JavaScript', 'React.js', 'jQuery', 'Bootstrap 4', 'RWD', 'Git', 'PHP (SMARTY)']
+            skillsItem: ['HTML 5', 'CSS3 (flexbox, grid, BEM)', 'Sass', 'JavaScript', 'React.js', 'jQuery', 'Bootstrap 4', 'RWD', 'Git', 'PHP (SMARTY)']
         }, {
             id: 2,
             name: 'techLearning',

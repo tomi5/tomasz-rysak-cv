@@ -1,16 +1,19 @@
 import React from 'react';
-import LangContext from '../../LangContext'
-import projectsData from './ProjectItem/ProjectsData';
-import ProjectItem from './ProjectItem/ProjectItem';
-import worksData from './WorkItem/WorksData';
-import WorkItem from './WorkItem/WorkItem';
-import educationData from './EducationItem/EducationData';
-import EducationItem from './EducationItem/EducationItem';
+import LangContext from '../../../LangContext'
+import ProjectItem from './CompetenceItem/ProjectItem';
+import WorkItem from './CompetenceItem/WorkItem';
+import EducationItem from './CompetenceItem/EducationItem';
+import worksData from '../../../datas/WorksData';
+import projectsData from '../../../datas/ProjectsData';
+import educationData from '../../../datas/EducationData';
 
 
 const CompetenceSection = (props) => {
 
+
     const { sectionName, sectionHeader } = props.competence;
+
+
 
     const projectItem = projectsData.map(project =>
         <ProjectItem
@@ -38,9 +41,9 @@ const CompetenceSection = (props) => {
             case "projects":
                 return projectItem;
             case "works":
-                return workItem
+                return workItem;
             case "education":
-                return educationItem
+                return educationItem;
             default:
                 return
         }

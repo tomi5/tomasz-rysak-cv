@@ -1,6 +1,6 @@
 import React from 'react';
+import CompetenceSection from './CompetenceSection/CompetenceSection';
 
-import CompetenceSection from './CompetenceSection';
 
 const Competences = () => {
 
@@ -10,21 +10,24 @@ const Competences = () => {
             sectionHeader: {
                 pl: "Własne Projekty",
                 en: "Own Projects",
-            }
+            },
+      
         },
         {
             sectionName: 'works',
             sectionHeader: {
                 pl: "Wybrane doświadczenie zawodowe",
                 en: "Selected professional experience",
-            }
+            },
+          
         },
         {
             sectionName: 'education',
             sectionHeader: {
                 pl: "Wykształcenie",
                 en: "Education",
-            }
+            },
+         
         },
     ];
 

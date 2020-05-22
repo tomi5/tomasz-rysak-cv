@@ -1,5 +1,5 @@
 import React from 'react';
-import myPortait from '../../assets/images/portrait.jpg';
+import myPortait from '../assets/images/portrait.jpg';
 
 
 

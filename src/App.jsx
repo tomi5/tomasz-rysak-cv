@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import LangButtons from '../Buttons/LangButtons'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
-import Main from '../Main/Main'
-import LangContext from '../../LangContext'
+import LangButtons from './components/Buttons/LangButtons'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Main from './components/Main'
+import LangContext from './LangContext'
 
 
 const App = () => {

@@ -1,14 +1,14 @@
 import React from 'react';
-import CardsSection from './CardsSection';
-import highlightsData from './highlightsData'
+import HighlightsSection from './HighlightsSection/HightlightsSection';
+import highlightsData from '../../datas/highlightsData'
 
 
-const Cards = () => {
+const Highlights = () => {
 
     return (
         <div>
             {highlightsData.map((card, id) =>
-                <CardsSection
+                <HighlightsSection
                     key={id}
                     card={card}
                 />
@@ -17,4 +17,4 @@ const Cards = () => {
     );
 }
 
-export default Cards;
+export default Highlights;

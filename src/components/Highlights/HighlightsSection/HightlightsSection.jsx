@@ -1,8 +1,8 @@
 import React from 'react';
-import LangContext from '../../LangContext'
-import CardItems from './CardItems'
+import LangContext from '../../../LangContext'
+import HighlightItems from './HighlightsItem/HighlightItems'
 
-const CardSections = (props) => {
+const HighlightsSection = (props) => {
     const { sectionName, sectionHeader, sectionItem } = props.card;
 
     return (
@@ -12,9 +12,10 @@ const CardSections = (props) => {
                     <h3>{sectionHeader[lang]}</h3>
                     <div>
                         <ul>
-                            <CardItems
+                            <HighlightItems
                                 sectionName={sectionName}
                                 sectionItem={sectionItem}
+                                lang={lang}
                             />
                         </ul>
                     </div>
@@ -24,4 +25,4 @@ const CardSections = (props) => {
     );
 }
 
-export default CardSections;
+export default HighlightsSection;
