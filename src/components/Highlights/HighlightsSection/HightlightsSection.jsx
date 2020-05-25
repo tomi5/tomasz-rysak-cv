@@ -2,8 +2,16 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable import/no-named-as-default-member */
 import React from 'react';
+import styled from 'styled-components';
 import LangContext from '../../../LangContext';
 import HighlightItems from './HighlightsItem/HighlightItems';
+
+const Section = styled.section`
+  position: 'relative';
+	left: 0;
+	width: 100%;
+	color: #fff;
+`;
 
 const HighlightsSection = ({ section }) => {
   const { sectionName, sectionHeader, sectionItem } = section;
@@ -11,7 +19,7 @@ const HighlightsSection = ({ section }) => {
   return (
     <LangContext.Consumer>
       {(lang) => (
-        <section>
+        <Section>
           <h3>{sectionHeader[lang]}</h3>
           <div>
             <ul>
@@ -22,7 +30,7 @@ const HighlightsSection = ({ section }) => {
               />
             </ul>
           </div>
-        </section>
+        </Section>
       )}
     </LangContext.Consumer>
   );

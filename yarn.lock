@@ -9005,6 +9005,11 @@ react-scripts@3.4.1:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-styles-hook@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/react-styles-hook/-/react-styles-hook-1.1.2.tgz#e5f6de3bfc22c31437cd826ad7eecda9955c1219"
+  integrity sha512-IF7QhfsyasYePF210+GSKVRCqKPBUn+ZYAh0NHW6qwR0BHDoIO6zO+6B6j2Sb/bNOVxQk2nu8xcHGdpCJn/2bQ==
+
 react@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"

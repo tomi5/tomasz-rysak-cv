@@ -1,21 +1,64 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const HeaderContainer = styled.header`
+  position: absolute;
+	top: 15px;
+	right: 2%;
+	left: 33%;
+`;
+
+const Title = styled.h1`
+  font-size: 28pt;
+	text-transform: uppercase;
+	text-align: left;
+`;
+
+const SubTitle = styled.h2`
+  font-size: 14pt;
+	text-align: left;
+`;
+
+const About = styled.p`
+  padding-top: 15px;
+	font-size: 9pt;
+	font-style: italic;
+	text-align: justify;
+`;
+
+const PhotoWrapper = styled.div`
+  position: absolute;
+	top: 15px;
+	left: 69px;
+	width: 180px;
+	height: 180px;
+	background-color: #E9E3E3;
+	box-shadow: 2px 3px 4px #0000003b;
+	z-index: 2;
+`;
+
+const Photo = styled.img`
+  display: block;
+	width: 100%;
+	height: auto;
+`;
 
 const Header = (props) => {
   const { headerAbout, headerPhotoSrc, headerPhotoDescr } = props;
 
   return (
-    <header>
-      <h1>Tomasz Rysak</h1>
-      <h2>{'</ front-end developer />'}</h2>
-      <p>{headerAbout}</p>
+    <HeaderContainer>
+      <Title>Tomasz Rysak</Title>
+      <SubTitle>{'</ front-end developer />'}</SubTitle>
+      <About>{headerAbout}</About>
 
-      <div className="picture-container">
-        <img
+      <PhotoWrapper>
+        <Photo
           src={headerPhotoSrc}
           alt={headerPhotoDescr}
         />
-      </div>
-    </header>
+      </PhotoWrapper>
+    </HeaderContainer>
   );
 };
 

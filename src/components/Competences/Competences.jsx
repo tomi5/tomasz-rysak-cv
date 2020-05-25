@@ -1,6 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 import CompetenceSection from './CompetenceSection/CompetenceSection';
 
+
+const Wrapper = styled.div`
+  position: absolute;
+	top: 19%;
+	bottom: 0;
+	left: 34%;
+	right: 2%;
+`;
 
 const Competences = () => {
   const competences = [
@@ -32,14 +41,14 @@ const Competences = () => {
 
 
   return (
-    <div>
+    <Wrapper>
       {competences.map((competence, id) => (
         <CompetenceSection
           key={id}
           competence={competence}
         />
       ))}
-    </div>
+    </Wrapper>
   );
 };
 

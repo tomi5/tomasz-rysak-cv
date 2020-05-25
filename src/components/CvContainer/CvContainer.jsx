@@ -1,8 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
 import myPortait from '../../assets/images/portrait.jpg';
+
+const Frame = styled.div`
+	position: relative;
+	margin: 0 auto;
+	min-height: 29.7cm;
+	width: 21cm;
+	background-color: #fff;
+	box-shadow: 0px 0px 11px 3px #614c4c;
+`;
 
 const CvContainer = ({ lang }) => {
   const headerAbout = {
@@ -19,9 +29,8 @@ const CvContainer = ({ lang }) => {
     en: 'I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).',
   };
 
-
   return (
-    <div>
+    <Frame>
       <Header
         headerAbout={headerAbout[lang]}
         headerPhotoSrc={myPortait}
@@ -29,7 +38,7 @@ const CvContainer = ({ lang }) => {
       />
       <Main />
       <Footer footerClouse={footerClouse[lang]} />
-    </div>
+    </Frame>
   );
 };
 export default CvContainer;
