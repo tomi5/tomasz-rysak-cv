@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-named-as-default-member */
 import React from 'react';
 import LangContext from '../../../LangContext';
 import HighlightItems from './HighlightsItem/HighlightItems';
 
-const HighlightsSection = (props) => {
-  const { sectionName, sectionHeader, sectionItem } = props.card;
+const HighlightsSection = ({ section }) => {
+  const { sectionName, sectionHeader, sectionItem } = section;
 
   return (
     <LangContext.Consumer>

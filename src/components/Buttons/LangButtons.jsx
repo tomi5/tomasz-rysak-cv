@@ -6,6 +6,7 @@ import gbFlag from '../../assets/images/gb.png';
 const LangButtons = ({ handleChangeLang }) => (
   <>
     <button
+      type="button"
       onClick={handleChangeLang.bind(this, 'pl')}
       aria-label="kliknij by uzyskać polską wersję językową"
     >
@@ -15,6 +16,7 @@ const LangButtons = ({ handleChangeLang }) => (
       />
     </button>
     <button
+      type="button"
       onClick={handleChangeLang.bind(this, 'en')}
       aria-label="click for English version"
     >

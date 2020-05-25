@@ -1,10 +1,9 @@
 import React from 'react';
 
-
 const ProjectButtons = (props) => {
   const linksArr = Object.entries(props);
 
-  const link = linksArr.map((link, id) => {
+  const links = linksArr.map((link, id) => {
     const name = link[0];
     const href = link[1];
 
@@ -20,7 +19,7 @@ const ProjectButtons = (props) => {
     );
   });
 
-  return <div>{link}</div>;
+  return <div>{links}</div>;
 };
 
 export default ProjectButtons;

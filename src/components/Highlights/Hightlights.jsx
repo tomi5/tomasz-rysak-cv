@@ -5,10 +5,10 @@ import highlightsData from '../../datas/highlightsData';
 
 const Highlights = () => (
   <div>
-    {highlightsData.map((card, id) => (
+    {highlightsData.map((section, id) => (
       <HighlightsSection
         key={id}
-        card={card}
+        section={section}
       />
     ))}
   </div>

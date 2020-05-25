@@ -1,27 +1,33 @@
-import React, { Component } from "react";
-import LangContext from "../../../../LangContext";
+/* eslint-disable no-shadow */
+import React, { useContext } from 'react';
+import LangContext from '../../../../LangContext';
 
-class HighlightItems extends Component {
-  makeSectionItem = (item, sectionName, lang) => {
+
+const HighlightItems = ({ sectionName, sectionItem }) => {
+  const lang = useContext(LangContext);
+
+  const makeSectionItem = (item, sectionName, lang) => {
     switch (sectionName) {
-      case "contact":
+      case 'contact':
         return item.map((item, id) => {
-          const { value, href, ariaLabel, icon } = item;
+          const {
+            value, href, ariaLabel, icon,
+          } = item;
           return (
             <li key={id}>
-              <span className={icon} aria-label={ariaLabel}></span>
+              <span className={icon} aria-label={ariaLabel} />
               {
-                href ? 
-                (
-                  <a href={href}>{value}</a>
-                ) : (
-                  <p>{value}</p>
-                )
+                href
+                  ? (
+                    <a href={href}>{value}</a>
+                  ) : (
+                    <p>{value}</p>
+                  )
               }
             </li>
           );
         });
-      case "skills":
+      case 'skills':
         return item.map((item, id) => {
           const { itemHeader, skillsItem } = item;
           return (
@@ -35,22 +41,15 @@ class HighlightItems extends Component {
             </li>
           );
         });
-      case "languages":
-      case "hobby":
+      case 'languages':
+      case 'hobby':
         return item[lang].map((item, id) => <li key={id}>{item}</li>);
       default:
-        return;
+        return false;
     }
   };
 
-  render() {
-    const lang = this.context;
-    const { sectionName, sectionItem } = this.props;
-
-    return this.makeSectionItem(sectionItem, sectionName, lang);
-  }
-}
-
-HighlightItems.contextType = LangContext;
+  return makeSectionItem(sectionItem, sectionName, lang);
+};
 
 export default HighlightItems;

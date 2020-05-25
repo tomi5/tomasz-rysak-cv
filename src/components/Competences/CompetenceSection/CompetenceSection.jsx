@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 import React from 'react';
 import LangContext from '../../../LangContext';
 import ProjectItem from './CompetenceItem/ProjectItem';
@@ -8,8 +9,8 @@ import projectsData from '../../../datas/ProjectsData';
 import educationData from '../../../datas/EducationData';
 
 
-const CompetenceSection = (props) => {
-  const { sectionName, sectionHeader } = props.competence;
+const CompetenceSection = ({ competence }) => {
+  const { sectionName, sectionHeader } = competence;
 
 
   const projectItem = projectsData.map((project) => (
@@ -42,6 +43,7 @@ const CompetenceSection = (props) => {
       case 'education':
         return educationItem;
       default:
+        return false;
     }
   };
 

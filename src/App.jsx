@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import LangButtons from './components/Buttons/LangButtons';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Main from './components/Main';
+import CvContainer from './components/CvContainer/CvContainer';
 import LangContext from './LangContext';
 
 
@@ -15,11 +13,7 @@ const App = () => {
     <>
       <LangContext.Provider value={lang}>
         <LangButtons handleChangeLang={handleChangeLang} />
-        <div>
-          <Header lang={lang} />
-          <Main />
-          <Footer lang={lang} />
-        </div>
+        <CvContainer lang={lang} />
       </LangContext.Provider>
     </>
 
