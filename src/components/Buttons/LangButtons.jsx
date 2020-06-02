@@ -20,7 +20,6 @@ const LangButtons = ({ handleChangeLang, ...props }) => {
     }
     &:hover>img {
       transform: scale(1.1)
-
     }
   `;
 

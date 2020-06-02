@@ -2,10 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderContainer = styled.header`
-  position: absolute;
-	top: 15px;
-	right: 2%;
-	left: 33%;
+padding: 20px 12px 10px 35px
 `;
 
 const Title = styled.h1`
@@ -29,7 +26,7 @@ const About = styled.p`
 const PhotoWrapper = styled.div`
   position: absolute;
 	top: 15px;
-	left: 69px;
+	left: 65px;
 	width: 180px;
 	height: 180px;
 	background-color: #E9E3E3;

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import LangButtons from './components/Buttons/LangButtons';
 import CvContainer from './components/CvContainer/CvContainer';
-import LangContext from './LangContext';
+import { LangProvider } from './LangContext';
 import plFlag from './assets/images/pl.png';
 import gbFlag from './assets/images/gb.png';
 import GlobalStyle from './theme/GlobalStyles';
@@ -14,7 +14,7 @@ const App = () => {
 
   return (
 
-    <LangContext.Provider value={lang}>
+    <LangProvider value={lang}>
       <GlobalStyle />
       <LangButtons
         handleChangeLang={() => handleChangeLang('pl')}
@@ -28,8 +28,8 @@ const App = () => {
         imgSrc={gbFlag}
         imgAlt="english version"
       />
-      <CvContainer lang={lang} />
-    </LangContext.Provider>
+      <CvContainer />
+    </LangProvider>
 
   );
 };

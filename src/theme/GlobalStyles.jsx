@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
 
 * {
 	text-decoration: none;
@@ -14,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
 html {
-	font-family: 'Arimo', sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 
 body {
