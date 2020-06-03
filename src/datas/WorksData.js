@@ -10,7 +10,7 @@ const worksData = [{
     date: 'Deceber, 2016 - May, 2020',
     company: 'Webiso',
     position: 'Front-End Developer - B2B',
-    duties: ['TODO'],
+    duties: ['creating websites with HTML, CSS (SASS, Bootstrap), JavaScript and PHP,', 'CMS implementations,', 'writing and implementing CMS Plugins (PHP, Smarty),', 'maintaining and improving websites,', 'getting feedback from users and customers.'],
   },
 }, {
   id: 2,

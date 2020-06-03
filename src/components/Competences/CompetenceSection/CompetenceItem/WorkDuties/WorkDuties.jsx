@@ -6,9 +6,18 @@ import { CompetenceDescr } from '../styled';
 // styles start
 const WorkDuty = styled.li`
     ${CompetenceDescr}
-    padding-left: 14px;
-    list-style-type: disc;
-    list-style-position: inside;
+    position: relative;
+    margin-left: 20px;
+    padding-left: 5px;
+    
+&::before {
+    content: "•";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    font-size: 10pt;
+    transform: translateX(-100%);
+}
 `;
 // styles end
 
