@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 	flex-wrap: nowrap;
 
 	@media print {
-		border: 1px solid black;
+		border: 1px solid #c7c7c7;
 		box-shadow: none;
 	}
 `;

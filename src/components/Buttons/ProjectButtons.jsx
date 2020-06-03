@@ -10,6 +10,10 @@ const ButtonsContainer = styled.div`
     justify-content: space-between;
     width: 150px;
     padding-left: 10px;
+
+    @media print {
+      display: none
+    }
 `;
 const Button = styled.a`  
     display: inline-block;
