@@ -33,13 +33,14 @@ const PhotoWrapper = styled.div`
 	background-color: #E9E3E3;
 	box-shadow: 2px 3px 4px #0000003b;
 	z-index: 2;
+
+  img {
+    display: block;
+	  width: 100%;
+	  height: auto;
+  }
 `;
 
-const Photo = styled.img`
-  display: block;
-	width: 100%;
-	height: auto;
-`;
 // styles end
 
 const Header = (props) => {
@@ -52,7 +53,7 @@ const Header = (props) => {
       <About>{headerAbout}</About>
 
       <PhotoWrapper>
-        <Photo
+        <img
           src={headerPhotoSrc}
           alt={headerPhotoDescr}
         />

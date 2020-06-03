@@ -7,6 +7,7 @@ import WorkDuties from './WorkDuties/WorkDuties';
 
 // styles start
 const WorkWrapper = CompetenceWrapper;
+
 const WorkName = styled.h4`
   ${CompetenceName}
   display: inline;
