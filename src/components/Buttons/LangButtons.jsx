@@ -6,7 +6,7 @@ const Button = styled.button`
 display: inline-block;
 background-color: inherit;
 width: 40px;
-margin: 5px 20px;
+margin: 30px 20px 5px;
 border: none;
 cursor: pointer;
 outline: none;

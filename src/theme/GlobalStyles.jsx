@@ -19,11 +19,14 @@ html {
 }
 
 body {
-	background-color: #e2e0e0;
+	background: #c0c0c0; 
 	position: relative;
-	overflow-x: hidden;
-	margin: 20px 0;
-	width: 100vw;
+	overflow-x: hidden;	
+	
+	@media only screen and (min-width: 1000px)  {
+		 background: linear-gradient(135deg, #c8c8c8 15%, #b9b9b9 40%, #787878 40.1%, #787878 40.1%, #ededed 40.5%);
+		 background-repeat: no-repeat;
+	}
 }
 
 html, body {

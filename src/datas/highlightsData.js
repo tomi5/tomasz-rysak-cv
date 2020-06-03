@@ -101,8 +101,8 @@ const highlightsData = [{
     en: 'Passions',
   },
   sectionItem: {
-    pl: ['podróże, turystyka ekstremalna i kwalifikowana', 'wyszukiwanie tanich połączeń lotniczych', 'fotografia przyrodnicza', 'uprawianie sportów: piłka nożna, muay-thai, snowboarding', 'książki i czasopisma turystyczno-podróżnicze', 'giełda papierów wartościowych'],
-    en: ['traveling, extreme and qualified tourism', 'low cost flight search', 'nature photography', 'sports: football, muay-thai, snowboarding', 'travel books and magazines', 'stock exchange'],
+    pl: ['podróże, turystyka ekstremalna i kwalifikowana', 'wyszukiwanie tanich połączeń lotniczych', 'fotografia przyrodnicza', 'uprawianie sportów: piłka nożna, muay-thai, kolarstwo, snowboarding', 'książki i czasopisma podróżnicze', 'giełda papierów wartościowych'],
+    en: ['traveling, extreme and qualified tourism', 'low cost flight search', 'nature photography', 'sports: football, muay-thai, cycling, snowboarding', 'travel books and magazines', 'stock exchange'],
   },
 },
 ];
