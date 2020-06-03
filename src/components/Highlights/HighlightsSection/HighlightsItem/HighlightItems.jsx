@@ -1,30 +1,96 @@
 /* eslint-disable no-shadow */
 import React, { useContext } from 'react';
+import styled, { css } from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faPhoneVolume, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import LangContext from '../../../../LangContext';
 
+// styles start
+const ContactWrapper = styled.li`
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+`;
+
+const sharedStyle = css`   
+    font-size: 10pt;
+    text-align: left;
+    display: block;
+    padding-left: 12px;
+    color: #fff;
+`;
+
+const ContactLink = styled.a`
+  ${sharedStyle}
+  transition: color .2s linear;
+
+  &:hover {
+    color: #000;
+  }
+`;
+const ContactAddress = styled.p`
+  ${sharedStyle}
+`;
+const StyledIcon = styled(FontAwesomeIcon)`
+ margin-left: 5px
+`;
+
+const SkillsName = styled.h4`
+    font-size: 10pt;
+    padding-top: 10px;
+    font-weight: normal;
+    text-decoration: underline;
+    text-align: left;
+`;
+const SkillItem = styled.li`
+    font-size: 10pt;    
+    margin-left: 20px;
+    list-style-type: disc;
+    text-align: left;
+`;
+// styles end
 
 const HighlightItems = ({ sectionName, sectionItem }) => {
   const lang = useContext(LangContext);
+
 
   const makeSectionItem = (item, sectionName, lang) => {
     switch (sectionName) {
       case 'contact':
         return item.map((item, id) => {
           const {
-            value, href, ariaLabel, icon,
+            value, href, ariaLabel, name,
           } = item;
+          const icon = (
+            (name === 'telephone' && faPhoneVolume)
+            || (name === 'email' && faEnvelope)
+            || (name === 'gitHub' && faGithub)
+            || (name === 'linkedIn' && faLinkedin)
+            || (name === 'address' && faMapMarkerAlt)
+          );
           return (
-            <li key={id}>
-              <span className={icon} aria-label={ariaLabel} />
+            <ContactWrapper key={id}>
+              <StyledIcon
+                icon={icon}
+                size="md"
+                aria-label={ariaLabel}
+              />
               {
                 href
                   ? (
-                    <a href={href}>{value}</a>
+                    <ContactLink
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {value}
+                    </ContactLink>
                   ) : (
-                    <p>{value}</p>
+                    <ContactAddress>{value}</ContactAddress>
                   )
               }
-            </li>
+            </ContactWrapper>
           );
         });
       case 'skills':
@@ -32,18 +98,18 @@ const HighlightItems = ({ sectionName, sectionItem }) => {
           const { itemHeader, skillsItem } = item;
           return (
             <li key={id}>
-              <h4>{itemHeader[lang]}</h4>
+              <SkillsName>{itemHeader[lang]}</SkillsName>
               <ul>
                 {skillsItem[lang]
-                  ? skillsItem[lang].map((item, id) => <li key={id}>{item}</li>)
-                  : skillsItem.map((item, id) => <li key={id}>{item}</li>)}
+                  ? skillsItem[lang].map((item, id) => <SkillItem key={id}>{item}</SkillItem>)
+                  : skillsItem.map((item, id) => <SkillItem key={id}>{item}</SkillItem>)}
               </ul>
             </li>
           );
         });
       case 'languages':
       case 'hobby':
-        return item[lang].map((item, id) => <li key={id}>{item}</li>);
+        return item[lang].map((item, id) => <SkillItem key={id}>{item}</SkillItem>);
       default:
         return false;
     }

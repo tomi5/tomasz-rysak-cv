@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// styles start
 const HeaderContainer = styled.header`
 padding: 20px 12px 10px 35px
 `;
@@ -39,6 +40,7 @@ const Photo = styled.img`
 	width: 100%;
 	height: auto;
 `;
+// styles end
 
 const Header = (props) => {
   const { headerAbout, headerPhotoSrc, headerPhotoDescr } = props;

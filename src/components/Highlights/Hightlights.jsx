@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import HighlightsSection from './HighlightsSection/HightlightsSection';
 import highlightsData from '../../datas/highlightsData';
 
-
+// styles start
 const Wrapper = styled.aside`
 	flex: 0 0 225px;
 	background-color: #77B9DD;
@@ -12,6 +12,7 @@ const Wrapper = styled.aside`
   flex-direction: column;
   justify-content: flex-end; 
 `;
+// styles end
 
 const Highlights = () => (
   <Wrapper>

@@ -1,6 +1,6 @@
 import React from 'react';
-import CompetenceSection from './CompetenceSection/CompetenceSection';
 
+import CompetenceSection from './CompetenceSection/CompetenceSection';
 
 const Competences = () => {
   const competences = [

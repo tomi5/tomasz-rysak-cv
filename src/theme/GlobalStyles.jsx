@@ -23,6 +23,18 @@ body {
 	position: relative;
 	overflow-x: hidden;
 	margin: 20px 0;
+	width: 100vw;
+}
+
+html, body {
+	@media print {
+	background-color: #fff;
+	margin: 0;
+	}
+}
+
+@page {
+	size: A4 portrait;
 }
 `;
 

@@ -1,6 +1,24 @@
 import React, { useContext } from 'react';
+import styled from 'styled-components';
 import LangContext from '../../../../LangContext';
 import ProjectButtons from '../../../Buttons/ProjectButtons';
+import { CompetenceWrapper, CompetenceName, CompetenceDescr } from './styled';
+
+// styles start
+const ProjectWrapper = CompetenceWrapper;
+
+const ProjectName = styled.h4`
+  ${CompetenceName}
+`;
+
+const ProjectDescr = styled.p`
+  ${CompetenceDescr}
+`;
+
+const ProjectTechs = styled.span`  
+    font-weight: bold;
+`;
+// styles end
 
 const ProjectItems = ({ project }) => {
   const lang = useContext(LangContext);
@@ -8,22 +26,22 @@ const ProjectItems = ({ project }) => {
 
   const { name, descr } = project[lang];
   const TXT = {
-    pl: 'Użyte technologie: ',
+    pl: 'Technologie: ',
     en: 'Used: ',
   };
   return (
-    <div>
-      <h4>{name}</h4>
-      <p>{descr}</p>
-      <p>
+    <ProjectWrapper>
+      <ProjectName>{name}</ProjectName>
+      <ProjectDescr>{descr}</ProjectDescr>
+      <ProjectDescr>
         {TXT[lang]}
-        <span>{techs}</span>
-      </p>
+        <ProjectTechs>{techs}</ProjectTechs>
+      </ProjectDescr>
       <ProjectButtons
         GitHub={GitHub}
         Live={Live}
       />
-    </div>
+    </ProjectWrapper>
   );
 };
 

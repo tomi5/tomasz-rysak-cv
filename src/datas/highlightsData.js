@@ -10,7 +10,6 @@ const highlightsData = [{
     value: '+48 503 58 34 37',
     href: 'tel:0048503583437',
     ariaLabel: 'tel',
-    icon: 'fas fa-phone-volume',
   },
   {
     id: 2,
@@ -18,7 +17,6 @@ const highlightsData = [{
     value: 'tomaszrysak@o2.pl',
     href: 'mailto:tomaszrysak@o2.pl',
     ariaLabel: 'email',
-    icon: 'far fa-envelope',
   },
   {
     id: 3,
@@ -26,7 +24,6 @@ const highlightsData = [{
     value: 'github.com/tomi5',
     href: 'https://github.com/tomi5',
     ariaLabel: 'gitHub logo',
-    icon: 'fab fa-github',
   },
   {
     id: 4,
@@ -34,14 +31,12 @@ const highlightsData = [{
     value: 'linkedin.com/in/tomasz-rysak',
     href: 'https://www.linkedin.com/in/tomasz-rysak/',
     ariaLabel: 'linkedIn logo',
-    icon: 'fab fa-linkedin',
   },
   {
     id: 5,
     name: 'address',
     value: 'Skawina, woj. małopolskie',
     ariaLabel: 'adres',
-    icon: 'fas fa-map-marker-alt',
   },
   ],
 },

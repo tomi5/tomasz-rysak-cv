@@ -1,20 +1,40 @@
 import React, { useContext } from 'react';
+import styled from 'styled-components';
 import LangContext from '../../../../LangContext';
+import { CompetenceWrapper, CompetenceName, CompetenceDescr } from './styled';
+
+// styles start
+const SchoolWrapper = CompetenceWrapper;
+const SchoolDate = styled.p`
+  ${CompetenceName}
+    
+`;
+const SchoolName = styled.h4`
+  ${CompetenceName} 
+  &::before {
+    display: none;
+    }
+`;
+
+const SchoolDescr = styled.p`
+  ${CompetenceDescr} 
+`;
+
+// styles end
 
 
 const EducationItem = ({ education }) => {
   const lang = useContext(LangContext);
 
   const {
-    date, school, spec, degree,
+    date, school, degree,
   } = education[lang];
   return (
-    <div>
-      <p>{date}</p>
-      <h4>{school}</h4>
-      <p>{spec}</p>
-      <p>{degree}</p>
-    </div>
+    <SchoolWrapper>
+      <SchoolDate>{date}</SchoolDate>
+      <SchoolName>{school}</SchoolName>
+      <SchoolDescr>{degree}</SchoolDescr>
+    </SchoolWrapper>
   );
 };
 

@@ -6,9 +6,11 @@ import Footer from './Footer';
 import Competences from '../Competences/Competences';
 import myPortait from '../../assets/images/portrait.jpg';
 
+// styles start
 const Wrapper = styled.div`
 flex: 1 0;
 `;
+// styles end
 
 const MainContent = () => {
   const headerAbout = {

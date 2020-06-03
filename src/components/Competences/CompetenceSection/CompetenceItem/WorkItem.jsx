@@ -1,7 +1,25 @@
 import React, { useContext } from 'react';
+import styled from 'styled-components';
+import { CompetenceWrapper, CompetenceName } from './styled';
 import LangContext from '../../../../LangContext';
 import WorkDuties from './WorkDuties/WorkDuties';
 
+
+// styles start
+const WorkWrapper = CompetenceWrapper;
+const WorkName = styled.h4`
+  ${CompetenceName}
+  display: inline;
+  font-weight: bold;
+    &::before {
+    display: none;
+}
+`;
+const WorkDate = styled.p`
+  ${CompetenceName}
+  display: inline;
+`;
+// styles end
 
 const WorkItem = ({ work }) => {
   const lang = useContext(LangContext);
@@ -10,16 +28,15 @@ const WorkItem = ({ work }) => {
   } = work[lang];
 
   return (
-    <div>
-      <p>{date}</p>
-      <h4>
+    <WorkWrapper>
+      <WorkDate>{date}</WorkDate>
+      <WorkName>
         {company}
         <span>
-          {' '}
-          -
+          {' - '}
           {position}
         </span>
-      </h4>
+      </WorkName>
       <ul>
         {duties.map((duty, id) => (
           <WorkDuties
@@ -28,7 +45,7 @@ const WorkItem = ({ work }) => {
           />
         ))}
       </ul>
-    </div>
+    </WorkWrapper>
   );
 };
 
