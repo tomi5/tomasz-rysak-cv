@@ -4,7 +4,8 @@
 My personal resume built with React.js
 * polish and english version.
 * adapted to print in A4 page size.
-* [LIVE PREVIEW](https://tomi5.github.io/tomasz-rysak-cv/)
+
+### [LIVE PREVIEW](https://tomi5.github.io/tomasz-rysak-cv/)
 
 ## Installation
 
