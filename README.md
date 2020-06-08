@@ -16,7 +16,7 @@ $ yarn start
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## PDF VERSIONS
-- ** You can download pdf versions directly from: **
-  -[English version](https://github.com/tomi5/tomasz-rysak-cv/raw/dev/Tomasz_Rysak-CV-EN.pdf)
-  -[Polish version](https://github.com/tomi5/tomasz-rysak-cv/raw/dev/Tomasz_Rysak-CV-PL.pdf)
+- **You can download pdf versions directly from:**
+  - [English version](https://github.com/tomi5/tomasz-rysak-cv/raw/dev/Tomasz_Rysak-CV-EN.pdf)
+  - [Polish version](https://github.com/tomi5/tomasz-rysak-cv/raw/dev/Tomasz_Rysak-CV-PL.pdf)
 
