@@ -3,11 +3,10 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 * {
 	text-decoration: none;
-	box-sizing: border-box;
+	box-sizing: border-box;yarn
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
