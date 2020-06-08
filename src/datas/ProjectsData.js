@@ -16,11 +16,11 @@ const projectsData = [{
   id: 2,
   pl: {
     name: 'LandLab - komercyjny projekt',
-    descr: 'Strona dla firmy projektującej ogrody - podpięty CMS',
+    descr: 'Strona dla firmy projektującej ogrody - podpięty CMS.',
   },
   en: {
     name: 'LandLab - commercial project',
-    descr: 'Commercial website for landscape architecture company',
+    descr: 'Commercial website for landscape architecture company.',
   },
   techs: 'HTML5 - CSS3 (Sass, flexbox) - JavaScript - CMS (CMS MADE SIMPLE) - PHP (SMARTY) - RWD',
   GitHub: 'https://github.com/tomi5/LandLab',
@@ -44,11 +44,11 @@ const projectsData = [{
   id: 4,
   pl: {
     name: 'Single Page - komercyjny projekt',
-    descr: 'Design strony i jej zakodowanie. Strona przygotowana dla zaprzyjaźnionej firmy.',
+    descr: 'Design strony i jej zakodowanie. Strona wykonana dla zaprzyjaźnionej firmy.',
   },
   en: {
     name: 'Single Page - commercial project',
-    descr: "Website design and coding. Website prepared for a friend's company",
+    descr: "Website design and coding. Website prepared for a friend's company.",
   },
   techs: 'HTML5 - CSS3 - jQuery - RWD',
   GitHub: 'https://github.com/tomi5/hydrogeopol',

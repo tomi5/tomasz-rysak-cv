@@ -7,40 +7,28 @@ import LangContext from '../../../LangContext';
 import HighlightItems from './HighlightsItem/HighlightItems';
 
 // styles start
-const Section = styled.section`  
-  position: relative;
-  padding: 10px 7px 25px;
-	width: 100%;
-	color: #fff;  
-  background: ${({ sectionName }) => (
-    (sectionName === 'contact' && '#3481AB')
-    || (sectionName === 'skills' && '#14597F')
-    || (sectionName === 'languages' && '#4098C9')
-    || (sectionName === 'hobby' && '#3481AB')
-  )
-};
-  &::before {
-    content: "";
-    width: 145px;
-    height: 20px;
-    position: absolute;
-    top: -15px;
-    left: 40px;
-    border-radius: 6px;
-    z-index: 1;       
-    background: inherit;
-  }
+const Section = styled.section`   
+  padding: 10px 3px 10px 7px;
+	width: 100%;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+`;
+const List = styled.ul`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
 `;
 
 const CardTitle = styled.h3`
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -12px;
+    padding-left: 8px;
+    color: #55B9F3;
     font-size: 10pt;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
-    z-index: 2;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg)
+   
 `;
 // styles end
 
@@ -50,15 +38,15 @@ const HighlightsSection = ({ section }) => {
   const lang = useContext(LangContext);
 
   return (
-    <Section sectionName={sectionName}>
+    <Section>
       <CardTitle>{sectionHeader[lang]}</CardTitle>
-      <ul>
+      <List>
         <HighlightItems
           sectionName={sectionName}
           sectionItem={sectionItem}
           lang={lang}
         />
-      </ul>
+      </List>
     </Section>
 
   );

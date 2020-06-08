@@ -5,19 +5,10 @@ import { CompetenceDescr } from '../styled';
 
 // styles start
 const WorkDuty = styled.li`
-    ${CompetenceDescr}
-    position: relative;
-    margin-left: 20px;
-    padding-left: 5px;
-    
-&::before {
-    content: "•";
-    position: absolute;
-    top: -1px;
-    left: 0;
-    font-size: 10pt;
-    transform: translateX(-100%);
-}
+    ${CompetenceDescr};    
+    padding-left: 0px; 
+    margin-left: 40px;   
+    list-style: disc;
 `;
 // styles end
 

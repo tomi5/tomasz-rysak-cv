@@ -14,19 +14,20 @@ const ContactWrapper = styled.li`
 `;
 
 const sharedStyle = css`   
-    font-size: 10pt;
+    font-size: 9pt;
+    font-weight: 700;
     text-align: left;
     display: block;
-    padding-left: 12px;
-    color: #fff;
+    padding-left: 10px;
+    color: #707070;
 `;
 
 const ContactLink = styled.a`
-  ${sharedStyle}
-  transition: color .2s linear;
+  ${sharedStyle};
+   transition: color .2s linear;
 
   &:hover {
-    color: #000;
+    color: #049ff3;
   }
 `;
 const ContactAddress = styled.p`
@@ -37,17 +38,18 @@ const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 const SkillsName = styled.h4`
-    font-size: 10pt;
+    font-size: 9pt;
     padding-top: 10px;
     font-weight: normal;
     text-decoration: underline;
     text-align: left;
 `;
 const SkillItem = styled.li`
-    font-size: 10pt;    
+    font-size: 9pt;
     margin-left: 20px;
     list-style-type: disc;
     text-align: left;
+    line-height: 1.4em;
 `;
 // styles end
 
@@ -73,7 +75,7 @@ const HighlightItems = ({ sectionName, sectionItem }) => {
             <ContactWrapper key={id}>
               <StyledIcon
                 icon={icon}
-                size="md"
+                size="1x"
                 aria-label={ariaLabel}
               />
               {

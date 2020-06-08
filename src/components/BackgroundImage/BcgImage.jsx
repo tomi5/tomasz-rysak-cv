@@ -19,14 +19,23 @@ const PenImgWrapper = css`
 `;
 const HeadphoneImgWrapper = css`
     width: 513px;
-    top: -10%;
-    left: calc(8% - 8cm); 
+    top: 47%;
+    left: calc(7% - 8cm); 
 
     img {
-      transform: rotate(-30deg);
+      transform: rotate(-65deg);
     }
 `;
-
+const PlantImgWrapper = css`
+    width: 500px;
+    top: 0;
+    left: 0; 
+    transform: translate(-25%, -25%);
+    img {
+      filter: drop-shadow(10px -1px 7px #999999);
+    }
+   
+`;
 const KeyboardImgWrapper = css`
     display: none;
     width: 1200px;
@@ -57,6 +66,7 @@ const BcgWrapper = styled.div`
     (name === 'pen' && PenImgWrapper)
       || (name === 'headphone' && HeadphoneImgWrapper)
       || (name === 'keyboard' && KeyboardImgWrapper)
+      || (name === 'plant' && PlantImgWrapper)
   )};
 
     img {

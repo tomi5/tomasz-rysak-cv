@@ -1,56 +1,33 @@
+/* eslint-disable import/extensions */
 /* eslint-disable no-shadow */
 import React, { useContext } from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faUserTie, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import ProjectItem from './CompetenceItem/ProjectItem';
 import WorkItem from './CompetenceItem/WorkItem';
 import EducationItem from './CompetenceItem/EducationItem';
 import worksData from '../../../datas/WorksData';
 import projectsData from '../../../datas/ProjectsData';
 import educationData from '../../../datas/EducationData';
+import CompetenceImg from './CompetenceImg/CompetenceImg';
 import LangContext from '../../../LangContext';
+import schoolImg from '../../../assets/images/school.svg';
+import worksImg from '../../../assets/images/career.svg';
+import projectImg from '../../../assets/images/coding.svg';
 
 // styles start
 const Section = styled.section`
  position: relative;
- margin: 10px 12px 10px 35px;
+ margin: 15px 13px 0px;
  text-align: left;
-
- &::before {
-    content: "";
-    position: absolute;
-    top: 7px;
-    right: 0;
-    height: 1px;
-    background-color: #000;
-    width: 90%;      
-    z-index: 1;
-    }
  `;
 
 const CompetenceHeading = styled.h3`  
   position: relative;
-  font-size: 12pt;
+  padding-bottom: 5px;
+  color: #55B9F3;
+  font-size: 11pt;
 	text-transform: uppercase;
-  padding: 0 30px 5px 15px;	
-	text-align: left;
-  display: inline-block;
-  background: white;
-  z-index: 2;  
-`;
-
-const StyledIcon = styled(FontAwesomeIcon)`
-  position: absolute;
-  top: -5px;
-  left: -22px;
-  width: 26px;
-  padding: 3px;
-  height: 1.25em;
-  font-size: 20px;
-  border: 1px solid black;
-  border-radius: 50%;
-  z-index: 3;
+  text-align: left;  
 `;
 // styles end
 
@@ -81,10 +58,10 @@ const CompetenceSection = ({ competence }) => {
 
   const makeSectionItem = (sectionName) => {
     switch (sectionName) {
-      case 'projects':
-        return projectItem;
       case 'works':
         return workItem;
+      case 'projects':
+        return projectItem;
       case 'education':
         return educationItem;
       default:
@@ -92,16 +69,17 @@ const CompetenceSection = ({ competence }) => {
     }
   };
 
-  const icon = (
-    (sectionName === 'projects' && faCode)
-    || (sectionName === 'works' && faUserTie)
-    || (sectionName === 'education' && faGraduationCap)
+
+  const bcgImg = (
+    (sectionName === 'projects' && projectImg)
+    || (sectionName === 'works' && worksImg)
+    || (sectionName === 'education' && schoolImg)
   );
 
   return (
     <>
       <Section>
-        <StyledIcon icon={icon} fixedWidth />
+        <CompetenceImg bcgImg={bcgImg} />
         <CompetenceHeading>{sectionHeader[lang]}</CompetenceHeading>
         {makeSectionItem(sectionName)}
       </Section>

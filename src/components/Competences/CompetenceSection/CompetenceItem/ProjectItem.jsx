@@ -5,10 +5,20 @@ import ProjectButtons from '../../../Buttons/ProjectButtons';
 import { CompetenceWrapper, CompetenceName, CompetenceDescr } from './styled';
 
 // styles start
-const ProjectWrapper = CompetenceWrapper;
+
+const ProjectWrapper = styled.div`
+  ${CompetenceWrapper};
+  position: relative;  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  z-index: 10;   
+  `;
 
 const ProjectName = styled.h4`
-  ${CompetenceName}
+  ${CompetenceName};
+  margin-top: 5px;
 `;
 
 const ProjectDescr = styled.p`
@@ -31,12 +41,14 @@ const ProjectItems = ({ project }) => {
   };
   return (
     <ProjectWrapper>
-      <ProjectName>{name}</ProjectName>
-      <ProjectDescr>{descr}</ProjectDescr>
-      <ProjectDescr>
-        {TXT[lang]}
-        <ProjectTechs>{techs}</ProjectTechs>
-      </ProjectDescr>
+      <div>
+        <ProjectName>{name}</ProjectName>
+        <ProjectDescr>{descr}</ProjectDescr>
+        <ProjectDescr>
+          {TXT[lang]}
+          <ProjectTechs>{techs}</ProjectTechs>
+        </ProjectDescr>
+      </div>
       <ProjectButtons
         GitHub={GitHub}
         Live={Live}

@@ -3,36 +3,26 @@ import styled from 'styled-components';
 import LangContext from '../../../../LangContext';
 import { CompetenceWrapper, CompetenceName, CompetenceDescr } from './styled';
 
+
 // styles start
 const SchoolWrapper = CompetenceWrapper;
-const SchoolDate = styled.p`
+const SchoolDetails = styled.h4`
   ${CompetenceName}
-    
 `;
-const SchoolName = styled.h4`
-  ${CompetenceName} 
-  &::before {
-    display: none;
-    }
-`;
-
 const SchoolDescr = styled.p`
-  ${CompetenceDescr} 
+  ${CompetenceDescr}   
 `;
-
 // styles end
-
 
 const EducationItem = ({ education }) => {
   const lang = useContext(LangContext);
 
-  const {
-    date, school, degree,
-  } = education[lang];
+  const { date, school, degree } = education[lang];
   return (
     <SchoolWrapper>
-      <SchoolDate>{date}</SchoolDate>
-      <SchoolName>{school}</SchoolName>
+      <SchoolDetails>
+        {`${date} - ${school}`}
+      </SchoolDetails>
       <SchoolDescr>{degree}</SchoolDescr>
     </SchoolWrapper>
   );

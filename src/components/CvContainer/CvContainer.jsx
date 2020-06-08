@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Highlights from '../Highlights/Hightlights';
-import MainContent from './MainContent';
+import MainContent from '../MainContent/MainContent';
+import Header from '../Header/Header';
 
 // styles start
 const Wrapper = styled.div`
@@ -12,20 +12,21 @@ const Wrapper = styled.div`
 	background-color: #fff;
 	box-shadow: 5px 7px 13px 4px #999999;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+    flex-direction: column;
 
 	@media print {
-		border: 1px solid #c7c7c7;
+		border: 1px solid #55B9F39C; 
 		box-shadow: none;
 		margin: 0 auto;
+		border-radius: 11px;
+		overflow: hidden;
 	}
 `;
 // styles end
 
 const CvContainer = () => (
   <Wrapper>
-    <Highlights />
+    <Header />
     <MainContent />
   </Wrapper>
 );

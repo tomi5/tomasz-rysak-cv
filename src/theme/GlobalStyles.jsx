@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 * {
 	text-decoration: none;
@@ -15,14 +15,15 @@ const GlobalStyles = createGlobalStyle`
 }
 
 html {
-	font-family: 'Arial', sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
 	background: #c0c0c0; 
 	position: relative;
 	overflow-x: hidden;	
-	
+	min-height: 100vh;
+	color: #707070;
 	@media only screen and (min-width: 1000px)  {
 		 background: linear-gradient(135deg, #c8c8c8 15%, #b9b9b9 40%, #787878 40.1%, #787878 40.1%, #ededed 40.5%);
 		 background-repeat: no-repeat;

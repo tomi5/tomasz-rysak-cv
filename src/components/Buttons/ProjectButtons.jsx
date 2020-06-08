@@ -4,33 +4,27 @@ import styled from 'styled-components';
 
 // styles start
 const ButtonsContainer = styled.div`  
-    position: absolute;
-    top: 0;
-    right: 0;
-    justify-content: space-between;
-    width: 150px;
+    flex: 0 0 145px;
     padding-left: 10px;
-
-    @media print {
-      display: none
-    }
+    align-items: flex-end;
+    display: flex;
 `;
 const Button = styled.a`  
     display: inline-block;
     margin: 5px;
-    width: 60px;
-    height: 20px;
+    width: 45px;
+    height: 16px;
     text-decoration: none;
-    font-size: 10pt;
-    line-height: 20px;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 20px;
-    transition: background .2s linear, color .2s linear, border .2s linear;
+    font-size: 7pt;
+    line-height: 16px;
+    color: #fff;
+    background: #55B9F3 0% 0% no-repeat padding-box;
+    box-shadow: 1px 2px 4px #489DCFA3;
+    border-radius: 11px;
+    transition: background .3s;
 
     &:hover {
-      background: #77B9DD;
-      border: 1px solid #77B9DD;
+      background: #12a7ff;     
       color: white;
     }
 `;

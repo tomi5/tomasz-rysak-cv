@@ -8,17 +8,11 @@ import WorkDuties from './WorkDuties/WorkDuties';
 // styles start
 const WorkWrapper = CompetenceWrapper;
 
-const WorkName = styled.h4`
-  ${CompetenceName}
-  display: inline;
-  font-weight: bold;
-    &::before {
-    display: none;
-}
-`;
-const WorkDate = styled.p`
-  ${CompetenceName}
-  display: inline;
+const WorkDetails = styled.h4`
+  ${CompetenceName} 
+  span {
+    font-weight: bold;
+  }
 `;
 // styles end
 
@@ -30,14 +24,10 @@ const WorkItem = ({ work }) => {
 
   return (
     <WorkWrapper>
-      <WorkDate>{date}</WorkDate>
-      <WorkName>
-        {company}
-        <span>
-          {' - '}
-          {position}
-        </span>
-      </WorkName>
+      <WorkDetails>
+        {date}
+        <span>{` ${company} - ${position}`}</span>
+      </WorkDetails>
       <ul>
         {duties.map((duty, id) => (
           <WorkDuties

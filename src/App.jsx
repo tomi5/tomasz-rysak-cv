@@ -8,6 +8,7 @@ import { LangProvider } from './LangContext';
 import plFlag from './assets/images/pl.png';
 import gbFlag from './assets/images/gb.png';
 import penBcg from './assets/images/pen.png';
+import plant from './assets/images/plant.png';
 import headphoneBcg from './assets/images/headphone.png';
 import keyboardBcg from './assets/images/keyboard.png';
 import GlobalStyle from './theme/GlobalStyles';
@@ -45,7 +46,10 @@ const App = () => {
         imgSrc={keyboardBcg}
         name="keyboard"
       />
-
+      <BcgImage
+        imgSrc={plant}
+        name="plant"
+      />
       <CvContainer />
     </LangProvider>
 
