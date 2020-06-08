@@ -9,8 +9,8 @@ const projectsData = [{
     descr: 'Polish and English version. Adapted to print in A4 page size.',
   },
   techs: 'React.js',
-  GitHub: 'https://github.com/tomi5/Tomasz_Rysak_CV',
-  Live: 'https://tomi5.github.io/Tomasz_Rysak_CV/',
+  GitHub: 'https://github.com/tomi5/tomasz-rysak-cv',
+  Live: 'https://tomi5.github.io/tomasz-rysak-cv/',
 },
 {
   id: 2,
