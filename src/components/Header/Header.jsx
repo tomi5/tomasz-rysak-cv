@@ -13,7 +13,7 @@ const HeaderContainer = styled.header`
 
 const TextWrapper = styled.div`
  flex: 1;
- padding-right: 93px; 
+ padding-right: 93px;  
 `;
 
 const Title = styled.h1`
@@ -50,7 +50,7 @@ const PhotoWrapper = styled.div`
 	box-shadow: 5px 8px 9px #1A181859;	
   overflow: hidden;
 
-  img {
+  .myPortait {
     display: block;
 	  width: 100%;
 	  height: auto;
@@ -80,6 +80,7 @@ const Header = () => {
       </TextWrapper>
       <PhotoWrapper>
         <img
+          className="myPortait"
           src={myPortait}
           alt={headerPhotoDescr[lang]}
         />

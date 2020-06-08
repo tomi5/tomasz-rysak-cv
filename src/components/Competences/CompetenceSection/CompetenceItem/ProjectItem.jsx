@@ -23,11 +23,12 @@ const ProjectName = styled.h4`
 
 const ProjectDescr = styled.p`
   ${CompetenceDescr}
+
+  span {
+    font-weight: bold;
+  }
 `;
 
-const ProjectTechs = styled.span`  
-    font-weight: bold;
-`;
 // styles end
 
 const ProjectItems = ({ project }) => {
@@ -46,7 +47,7 @@ const ProjectItems = ({ project }) => {
         <ProjectDescr>{descr}</ProjectDescr>
         <ProjectDescr>
           {TXT[lang]}
-          <ProjectTechs>{techs}</ProjectTechs>
+          <span>{techs}</span>
         </ProjectDescr>
       </div>
       <ProjectButtons
