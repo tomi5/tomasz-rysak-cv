@@ -13,7 +13,7 @@ const HeaderContainer = styled.header`
 
 const TextWrapper = styled.div`
  flex: 1;
- padding-right: 74px; 
+ padding-right: 93px; 
 `;
 
 const Title = styled.h1`
@@ -38,7 +38,7 @@ const SubTitle = styled.h2`
 const About = styled.p`
   padding-top: 5px;
 	font-size: 8pt;
-  line-height: 1.4em;
+  line-height: 1.3em;
 	font-style: italic;
 	text-align: justify;
 `;
@@ -60,8 +60,8 @@ const PhotoWrapper = styled.div`
 // styles end
 
 const headerAbout = {
-  pl: 'Jestem front-end developerem samoukiem. Choć moje wykształcenie nie jest związane z branżą IT, to jednak przy każdej wykonywanej pracy starałem się ją przede wszystkim zautomatyzować i usprawnić. Swoje pierwsze doświadczenie na stanowisku Front-end developer zdobyłem w agencji interaktywnej Webiso,  w której poznawałem swiat developmentu od kuchni i z powodzeniem realizowałem projekty. Jako freelancer stowrzyłem również swoje pierwsze komercyjne projekty. Chętnie poznaję nowe użyteczne (na topie) technologie. Jestem otwarty na wspolrace zarówno B2B/UoP',
-  en: 'I am a self-taught front-end developer. Although my education is not related to the IT, at every job I tried to automate and improve my works. Small apps created by me for the company\'s needs, such as simple backup scripts, databases and templates for calculating tourist offer were of benefit to the whole team. While searching for solutions for creating these apps and conversations with friends programmers, I involved in the world of web development and I started to create my first hobby projects.',
+  pl: 'Jestem front-end developerem samoukiem. Pierwsze doświadczenie na tym stanowisku zdobyłem w agencji interaktywnej Webiso, gdzie z powodzeniem realizowałem powierzone mi projekty. Dzięki współpracy z bardziej doświadczonymi developerami, mogłem udoskonalić swoje umiejętności oraz poszerzyć wiedzę o kolejne technologie. Jako freelancer stworzyłem swoje pierwsze komercyjne projekty. Największą statysfakcję w pracy czerpię kiedy stawiam czoła wyzwaniom, przy którch mam okazję rozwijać się i uczyć nowych rzeczy. Doświadczenie i umięjętnośći miękkie nabyte w pracy w innych branżach z pewnością wnoszą wiele pozytywnych aspektów do zespołu do którego dołączam. Jestem otwarty na podjęcie współpracy na B2B lub UoP.',
+  en: 'I am a self-taught front-end developer. I gained my first experience in this position at the Webiso interactive agency, where I successfully implemented the projects I in charge of. Working with more experienced developers, I was able to improve my skills and expand my knowledge with new technologies. As a freelancer, I created my first commercial projects. I gain the most satisfaction at work when I am challenged, have the opportunity to develop myself and learn new things. My Experience and soft skills acquired at jobs beyond IT branch certainly bring many positive aspects to the team I join. I am open to cooperation on B2B contract or employment contract.',
 };
 const headerPhotoDescr = {
   pl: 'zdjęcie portretowe',
