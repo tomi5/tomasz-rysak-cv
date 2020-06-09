@@ -14,6 +14,9 @@
 # xd projects
 *.xd
 
+# pdf output
+*.pdf
+
 # misc
 .DS_Store
 .env.local
