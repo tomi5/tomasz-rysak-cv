@@ -11,6 +11,9 @@
 # production
 /build
 
+# xd projects
+*.xd
+
 # misc
 .DS_Store
 .env.local
