@@ -7,7 +7,7 @@ const worksData = [{
     duties: ['tworzenie stron www na podstawie projektu graficznego,', 'implementacja CMS’a do stron internetowych,', 'pisanie skryptów JavaScript,', "pisanie i implementacja pluginów CMS'a (PHP, Smarty),", 'kontakt z klientem w zakresie tworzonej dla niego strony www.'],
   },
   en: {
-    date: 'Deceber, 2019 - May, 2020',
+    date: 'December, 2019 - May, 2020',
     company: 'Webiso',
     position: 'Front-End Developer - B2B',
     duties: ['creating websites with HTML, CSS (SASS, Bootstrap), JavaScript and PHP,', 'CMS implementations,', 'writing and implementing CMS Plugins (PHP, Smarty),', 'maintaining and improving websites,', 'getting feedback from users and customers.'],
