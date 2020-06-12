@@ -36,7 +36,7 @@ const worksData = [{
   },
   en: {
     date: 'August, 2013 - March, 2016',
-    company: 'Tour Operator',
+    company: 'Strefa Wypraw',
     position: 'travel specialist',
     duties: ['creating tailor-made trips,', 'supervising ongoing tours organized by the Tour Organizator,', 'contact with the customer,',
       'contact with contractors, price negotiations - mainly in English.',
