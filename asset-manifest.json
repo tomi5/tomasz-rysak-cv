@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/tomasz-rysak-cv/static/js/main.e957e5d0.chunk.js",
-    "main.js.map": "/tomasz-rysak-cv/static/js/main.e957e5d0.chunk.js.map",
+    "main.js": "/tomasz-rysak-cv/static/js/main.a624408e.chunk.js",
+    "main.js.map": "/tomasz-rysak-cv/static/js/main.a624408e.chunk.js.map",
     "runtime-main.js": "/tomasz-rysak-cv/static/js/runtime-main.2cbaf0d7.js",
     "runtime-main.js.map": "/tomasz-rysak-cv/static/js/runtime-main.2cbaf0d7.js.map",
     "static/js/2.e4587c55.chunk.js": "/tomasz-rysak-cv/static/js/2.e4587c55.chunk.js",
     "static/js/2.e4587c55.chunk.js.map": "/tomasz-rysak-cv/static/js/2.e4587c55.chunk.js.map",
     "index.html": "/tomasz-rysak-cv/index.html",
-    "precache-manifest.1ef10e2be35cccdf3d51a032ac89c171.js": "/tomasz-rysak-cv/precache-manifest.1ef10e2be35cccdf3d51a032ac89c171.js",
+    "precache-manifest.797d652eeef36abcd7905a9c13e6845e.js": "/tomasz-rysak-cv/precache-manifest.797d652eeef36abcd7905a9c13e6845e.js",
     "service-worker.js": "/tomasz-rysak-cv/service-worker.js",
     "static/js/2.e4587c55.chunk.js.LICENSE.txt": "/tomasz-rysak-cv/static/js/2.e4587c55.chunk.js.LICENSE.txt",
     "static/media/career.svg": "/tomasz-rysak-cv/static/media/career.efd5778e.svg",
@@ -22,6 +22,6 @@
   "entrypoints": [
     "static/js/runtime-main.2cbaf0d7.js",
     "static/js/2.e4587c55.chunk.js",
-    "static/js/main.e957e5d0.chunk.js"
+    "static/js/main.a624408e.chunk.js"
   ]
 }
