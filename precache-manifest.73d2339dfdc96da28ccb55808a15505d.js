@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8abad7758d00a5b4bf4ddfcc0ce5de8b",
+    "revision": "9686dfbec03a48acc11538574cab1c7e",
     "url": "/tomasz-rysak-cv/index.html"
   },
   {
-    "revision": "7eb8fb53a484cdfd72f7",
-    "url": "/tomasz-rysak-cv/static/js/2.e4587c55.chunk.js"
+    "revision": "816d9e20825fb0c4a7b7",
+    "url": "/tomasz-rysak-cv/static/js/2.02eebd83.chunk.js"
   },
   {
     "revision": "b92b369c485a56d25a5a7495ecf46b59",
-    "url": "/tomasz-rysak-cv/static/js/2.e4587c55.chunk.js.LICENSE.txt"
+    "url": "/tomasz-rysak-cv/static/js/2.02eebd83.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7753f3b67725e989f215",
-    "url": "/tomasz-rysak-cv/static/js/main.10ddcaae.chunk.js"
+    "revision": "9a1e8dc90692545d4797",
+    "url": "/tomasz-rysak-cv/static/js/main.46a14717.chunk.js"
   },
   {
     "revision": "a3d24c4d18c7c3518755",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4166d86b25cb20162f7ec79f1114d12a",
     "url": "/tomasz-rysak-cv/static/media/coding.4166d86b.svg"
+  },
+  {
+    "revision": "890ffdf1ebf1136b5bbcacbe50c0fb35",
+    "url": "/tomasz-rysak-cv/static/media/download.890ffdf1.svg"
   },
   {
     "revision": "741977b61877cd45c3a38cf5ccea87f3",
