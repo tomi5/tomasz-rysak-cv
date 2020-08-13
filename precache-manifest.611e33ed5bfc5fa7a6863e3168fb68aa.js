@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9686dfbec03a48acc11538574cab1c7e",
+    "revision": "00d49292ed97fcca8a85098c96af50db",
     "url": "/tomasz-rysak-cv/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tomasz-rysak-cv/static/js/2.02eebd83.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9a1e8dc90692545d4797",
-    "url": "/tomasz-rysak-cv/static/js/main.46a14717.chunk.js"
+    "revision": "c36071b16fa932dbcdc3",
+    "url": "/tomasz-rysak-cv/static/js/main.28fc69b3.chunk.js"
   },
   {
     "revision": "a3d24c4d18c7c3518755",

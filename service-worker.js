@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tomasz-rysak-cv/precache-manifest.73d2339dfdc96da28ccb55808a15505d.js"
+  "/tomasz-rysak-cv/precache-manifest.611e33ed5bfc5fa7a6863e3168fb68aa.js"
 );
 
 self.addEventListener('message', (event) => {
