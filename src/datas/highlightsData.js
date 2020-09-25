@@ -61,6 +61,7 @@ const highlightsData = [
           "CSS3 (flexbox, grid, BEM)",
           "Sass",
           "JavaScript",
+          "TypeScript",
           "React.js",
           "jQuery",
           "Bootstrap 4",
@@ -76,7 +77,7 @@ const highlightsData = [
           pl: "Aktualnie poznaję:",
           en: "I'm learning:",
         },
-        skillsItem: ["TypeScript", "GatsbyJS + GraphQL"],
+        skillsItem: ["GatsbyJS + GraphQL"],
       },
       {
         id: 3,
