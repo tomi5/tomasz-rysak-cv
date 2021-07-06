@@ -12,8 +12,8 @@ My personal resume built with React.js
 - Clone this repo to your local machine using `https://github.com/tomi5/tomasz-rysak-cv.git`
 - use yarn to install all dependencies for a project.
 ```shell
-$ yarn install
-$ yarn start
+ yarn install
+ yarn start
 ```
 - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
