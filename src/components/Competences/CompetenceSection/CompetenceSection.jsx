@@ -17,7 +17,7 @@ import projectImg from '../../../assets/images/coding.svg';
 // styles start
 const Section = styled.section`
  position: relative;
- margin: 14px 13px 0px;
+ margin: 14px 13px 5px;
  text-align: left;
  `;
 
