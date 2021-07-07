@@ -3,10 +3,18 @@ import styled from 'styled-components';
 import CompetenceSection from './CompetenceSection/CompetenceSection';
 import Footer from '../Footer/Footer';
 
+
 const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+`;
+
+const Wrapper = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+flex: 1;
 `;
 
 const Competences = () => {
@@ -42,12 +50,14 @@ const Competences = () => {
 
   return (
     <Main>
+      <Wrapper>
       {competences.map((competence, id) => (
         <CompetenceSection
           key={id}
           competence={competence}
         />
       ))}
+      </Wrapper>
       <Footer />
     </Main>
 
