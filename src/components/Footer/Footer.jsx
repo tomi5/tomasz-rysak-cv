@@ -8,7 +8,7 @@ const Coulse = styled.p`
     font-size: 6pt;
     text-align: left;
     font-style: italic;
-    width: 72%;
+    width: 90%;
 `;
 // styles end
 
