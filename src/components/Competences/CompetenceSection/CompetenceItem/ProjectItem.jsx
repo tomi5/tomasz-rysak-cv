@@ -2,16 +2,16 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import LangContext from '../../../../LangContext';
 import ProjectButtons from '../../../Buttons/ProjectButtons';
-import { CompetenceWrapper, CompetenceName, CompetenceDescr } from './styled';
+import {CompetenceName, CompetenceDescr } from './styled';
 
 // styles start
 
-const ProjectWrapper = styled.div`
-  ${CompetenceWrapper};
+const ProjectWrapper = styled.div` 
   position: relative;  
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  padding: 1px 0px;
   justify-content: space-between;
   z-index: 10;   
   `;
