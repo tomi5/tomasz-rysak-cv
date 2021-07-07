@@ -49,11 +49,13 @@ const PhotoWrapper = styled.div`
   border-radius: 11px;
 	box-shadow: 5px 8px 9px #1A181859;	
   overflow: hidden;
+ 
 
   .myPortait {
     display: block;
-	  width: 100%;
+	  width: 100%;    
 	  height: auto;
+    transform: translateZ(0); // prevent downscale the image in Chrome
   }
 `;
 
