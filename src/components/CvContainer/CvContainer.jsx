@@ -6,15 +6,16 @@ import Header from '../Header/Header';
 // styles start
 const Wrapper = styled.div`
 	position: relative;
-	margin: 0 auto 30px;
-	height: 29.7cm;
+	margin: 0 auto 30px;	
 	width: 21cm;
 	background-color: #fff;
 	box-shadow: 5px 7px 13px 4px #999999;
 	display: flex;
     flex-direction: column;
+	
 
 	@media print {
+		height: 29.7cm;
 		border: 1px solid #55B9F39C; 
 		box-shadow: none;
 		margin: 0 auto;
