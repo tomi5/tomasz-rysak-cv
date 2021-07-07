@@ -104,7 +104,12 @@ const HighlightItems = ({ sectionName, sectionItem }) => {
               <ul>
                 {skillsItem[lang]
                   ? skillsItem[lang].map((item, id) => <SkillItem key={id}>{item}</SkillItem>)
-                  : skillsItem.map((item, id) => <SkillItem key={id}>{item}</SkillItem>)}
+                  : 
+                  skillsItem.map((item, id) => {                           
+                    const itemTranslation = lang === 'en' ? item.replaceAll('podstawy', 'basics') : item;    
+                    return <SkillItem key={id}>{itemTranslation}</SkillItem>
+                  }
+                  )}
               </ul>
             </li>
           );
