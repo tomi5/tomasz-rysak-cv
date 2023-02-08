@@ -11,7 +11,7 @@ const worksData = [
                 "wdrażanie aplikacji do obsługi płatności internetowych (SEPG Hosted Payment Page),",
                 "wdrażanie platformy e-commerce dla branży lotniczej oferującej możliwość tworzenia rezerwacji lotniczych oraz późniejsze zarządzanie nimi (EzyCommerce),",
                 "testowanie kodu: testy jednostkowe oraz e2e,",
-                "wykorzystywane technologie: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#."
+                "technologie: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#."
             ],
         },
         en: {
@@ -36,7 +36,6 @@ const worksData = [
       position: "Front-End Developer - B2B",
       duties: [
         "projektowanie i wdrażanie nowych sklepów internetowych z wykorzystaniem technologii: HTML (CSHTML), CSS (SASS, Bootstrap), JavaScript (Knockout.js),",
-        "optymalizowanie istniejącego kodu sklepów internetowych,",
         "rozwijanie autorskiego systemu CMS,",
         "analizowanie i implementacja wymagań klienta.",
       ],
@@ -62,8 +61,7 @@ const worksData = [
       duties: [
         "tworzenie stron www na podstawie projektu graficznego z wykorzystaniem technologii: HTML, CSS (SASS, Bootstrap), JavaScript i PHP,",
         "implementacja CMS’a do stron internetowych,",
-        "pisanie skryptów JavaScript,",
-        "pisanie i implementacja pluginów CMS'a (PHP, Smarty),",
+        "pisanie skryptów JavaScript oraz pluginów CMS'a (PHP, Smarty)",
         "kontakt z klientem w zakresie tworzonej dla niego strony www.",
       ],
     },
@@ -90,7 +88,7 @@ const worksData = [
         "tworzenie oferty grupowych wyjazdów turystycznych i nadzorowanie realizacji,",
         "pozyskiwanie i utrzymywanie relacji z klientami,",
         "utrzymywanie trwałych relacji B2B (głównie w języku angielskim),",
-        'pomysłodawca własnego produktu opartego na "Dynamicznym Pakietowaniu" - wdrożenie i nadzór nad projektem,',
+        'pomysłodawca produktu opartego na "Dynamicznym Pakietowaniu" - wdrożenie i nadzór,',
         "aktualizacja strony www z wykorzystaniem CMSa.",
       ],
     },
@@ -116,8 +114,7 @@ const worksData = [
       duties: [
         'tworzenie i realizacja wypraw "szytych na miarę" w egzotyczne kraje,',
         "obsługa bieżących imprez turystycznych organizowanych przez biuro,",
-        "kontakt z osobami zainteresowanymi wyjazdami,",
-        "kontakt z kontrahentami, negocjacje cenowe - głównie w języku angielskim.",
+        "kontakt z osobami zainteresowanymi wyjazdami oraz z kontrahentami.",
       ],
     },
     en: {
@@ -127,8 +124,7 @@ const worksData = [
       duties: [
         "creating tailor-made trips,",
         "supervising ongoing tours organized by the Tour Organizator,",
-        "contact with the customer,",
-        "contact with contractors, price negotiations - mainly in English.",
+        "contact with the customers and contractors,",
       ],
     },
   },
