@@ -6,10 +6,12 @@ const worksData = [
             company: "Sii Polska",
             position: "Software engineer - B2B",
             duties: [
-                "projektowanie i wdrażanie nowych sklepów internetowych z wykorzystaniem technologii: HTML (CSHTML), CSS (SASS, Bootstrap), JavaScript (Knockout.js),",
-                "optymalizowanie istniejącego kodu sklepów internetowych,",
-                "rozwijanie autorskiego systemu CMS,",
-                "analizowanie i implementacja wymagań klienta.",
+                "realizacja projektów dla klienta Sabre Corporation w tym:",
+                "wdrażanie aplikacji webowej dla branży lotniczej (Digital Workspace),",
+                "wdrażanie aplikacji do obsługi płatności internetowych (SEPG Hosted Payment Page),",
+                "wdrażanie platformy e-commerce dla branży lotniczej oferującej możliwość tworzenia rezerwacji lotniczych oraz późniejsze zarządzanie nimi (EzyCommerce),",
+                "testowanie kodu: testy jednostkowe oraz e2e,",
+                "wykorzystywane technologie: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#."
             ],
         },
         en: {
@@ -17,33 +19,12 @@ const worksData = [
             company: "Sii Poland",
             position: "Software engineer - B2B",
             duties: [
-                "creating websites with HTML (CSHTML), CSS (SASS, Bootstrap), JavaScript (Knockout.js),",
-                "maintaining and improving existing websites,",
-                "improving a proprietary CMS",
-                "analyzing and implementing customer requirements.",
-
-//                 •	Developing a consumer facing airline booking site – 20 people team
-//                 •   Web application for the airline industry – 20 people, 2 Scrum teams
-//
-//                 •	Creating web application with VueJs, Vuex, .NET core and JavaScript,
-//                 •	Bug fixes and refactoring of existing code
-//                 •	Writing e2e tests with cypress.jo
-//
-//                     •	Creating web application with ReactJS, Redux and JavaScript,
-//                 •	Bug fixes and refactoring of existing code
-//                 •	Writing unit tests with Jest and Enzyme, and e2e test with TestCafe
-//
-//     sabre enterprise payment gateway - hosted payment page
-//
-//     •	VueJs, Vuex, CSS/SASS, C#, Cypress.jo, TeamCity, Git, Docker
-// •	    ReactJS, Redux, GraphQL, CSS/SASS, Jest, Enzyme, TestCafe, Git, Jenkins, Jest, Enyzme and TestCafe
-//
-//
-// I am working on the PWA multi-tenant e-commerce application intended mainly for the aviation industry. The platform offers all the functionality an airline needs to run its business, such as: purchasing and managing tickets, ancillaries and seats; online check-in; travel agency portal; loyalty program and more. The product can be fully personalized to airline’s needs and managed by them through dedicated Admin Portal and CMS.
-//
-// creating web application with React, Redux and Javascript,
-// ● code testing based on Jest, Enzyme and TestCafe,
-
+                "working as a contractor for Sabre Cooperation, including:",
+                "developing web application for the airline industry (Digital Workspace),",
+                "developing payment gateway (SEPG Hosted Payment Page),",
+                "developing PWA multi-tenant e-commerce PWA intended for the aviation industry. The platform allows to create and manage flight reservations (EzyCommerce),",
+                "code testing: unit and e2e",
+                "technologies: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#."
             ],
         },
     },
