@@ -67,6 +67,7 @@ const highlightsData = [
           "Git",
           "Jest, Enzyme, Playwright, TestCafe, Cypress.jo",
           "Knockout.js",
+          "Jenkins, TeamCity",
           "GraphQL - podstawy",
           "PHP (SMARTY), C#, Python - podstawy",
         ],
