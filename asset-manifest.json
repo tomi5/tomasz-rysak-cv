@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.js": "/tomasz-rysak-cv/static/js/main.217326a9.chunk.js",
-    "main.js.map": "/tomasz-rysak-cv/static/js/main.217326a9.chunk.js.map",
-    "runtime-main.js": "/tomasz-rysak-cv/static/js/runtime-main.2cbaf0d7.js",
-    "runtime-main.js.map": "/tomasz-rysak-cv/static/js/runtime-main.2cbaf0d7.js.map",
-    "static/js/2.02eebd83.chunk.js": "/tomasz-rysak-cv/static/js/2.02eebd83.chunk.js",
-    "static/js/2.02eebd83.chunk.js.map": "/tomasz-rysak-cv/static/js/2.02eebd83.chunk.js.map",
+    "main.js": "/tomasz-rysak-cv/static/js/main.d1cf8088.chunk.js",
+    "main.js.map": "/tomasz-rysak-cv/static/js/main.d1cf8088.chunk.js.map",
+    "runtime-main.js": "/tomasz-rysak-cv/static/js/runtime-main.060fb88d.js",
+    "runtime-main.js.map": "/tomasz-rysak-cv/static/js/runtime-main.060fb88d.js.map",
+    "static/js/2.dd3243b6.chunk.js": "/tomasz-rysak-cv/static/js/2.dd3243b6.chunk.js",
+    "static/js/2.dd3243b6.chunk.js.map": "/tomasz-rysak-cv/static/js/2.dd3243b6.chunk.js.map",
     "index.html": "/tomasz-rysak-cv/index.html",
-    "precache-manifest.918ee168a74b24140cb7797ff54a6aed.js": "/tomasz-rysak-cv/precache-manifest.918ee168a74b24140cb7797ff54a6aed.js",
+    "precache-manifest.759f0487b868c1117ff3a4885522442c.js": "/tomasz-rysak-cv/precache-manifest.759f0487b868c1117ff3a4885522442c.js",
     "service-worker.js": "/tomasz-rysak-cv/service-worker.js",
-    "static/js/2.02eebd83.chunk.js.LICENSE.txt": "/tomasz-rysak-cv/static/js/2.02eebd83.chunk.js.LICENSE.txt",
-    "static/media/career.svg": "/tomasz-rysak-cv/static/media/career.efd5778e.svg",
-    "static/media/coding.svg": "/tomasz-rysak-cv/static/media/coding.4166d86b.svg",
-    "static/media/download.svg": "/tomasz-rysak-cv/static/media/download.890ffdf1.svg",
+    "static/js/2.dd3243b6.chunk.js.LICENSE.txt": "/tomasz-rysak-cv/static/js/2.dd3243b6.chunk.js.LICENSE.txt",
+    "static/media/career.svg": "/tomasz-rysak-cv/static/media/career.2b0dcb5d.svg",
+    "static/media/coding.svg": "/tomasz-rysak-cv/static/media/coding.997a58cb.svg",
+    "static/media/download.svg": "/tomasz-rysak-cv/static/media/download.cd7fb622.svg",
     "static/media/headphone.png": "/tomasz-rysak-cv/static/media/headphone.741977b6.png",
     "static/media/keyboard.png": "/tomasz-rysak-cv/static/media/keyboard.205a20dd.png",
     "static/media/pen.png": "/tomasz-rysak-cv/static/media/pen.b4d989ac.png",
     "static/media/plant.png": "/tomasz-rysak-cv/static/media/plant.d4abb58f.png",
     "static/media/portrait.jpg": "/tomasz-rysak-cv/static/media/portrait.2b82fe0a.jpg",
-    "static/media/school.svg": "/tomasz-rysak-cv/static/media/school.336097e8.svg"
+    "static/media/school.svg": "/tomasz-rysak-cv/static/media/school.cd667dd6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2cbaf0d7.js",
-    "static/js/2.02eebd83.chunk.js",
-    "static/js/main.217326a9.chunk.js"
+    "static/js/runtime-main.060fb88d.js",
+    "static/js/2.dd3243b6.chunk.js",
+    "static/js/main.d1cf8088.chunk.js"
   ]
 }
