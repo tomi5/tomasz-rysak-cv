@@ -28,21 +28,21 @@ const projectsData = [
     Live: "https://tomi5.github.io/tomasz-rysak-cv/",
   },
 
-  {
-    id: 3,
-    pl: {
-      name: "LandLab - komercyjny projekt dla architekta krajobrazu",
-      // descr: "Strona dla firmy projektującej ogrody - podpięty CMS.",
-    },
-    en: {
-      name: "LandLab - commercial project for landscape architecture company",
-      // descr: "Commercial website for landscape architecture company.",
-    },
-    techs:
-      "HTML5, CSS3, JS, CMS MADE SIMPLE, SMARTY",
-    GitHub: "https://github.com/tomi5/LandLab",
-    Live: "https://landlab.pl/",
-  },
+  // {
+  //   id: 3,
+  //   pl: {
+  //     name: "LandLab - komercyjny projekt dla architekta krajobrazu",
+  //     // descr: "Strona dla firmy projektującej ogrody - podpięty CMS.",
+  //   },
+  //   en: {
+  //     name: "LandLab - commercial project for landscape architecture company",
+  //     // descr: "Commercial website for landscape architecture company.",
+  //   },
+  //   techs:
+  //     "HTML5, CSS3, JS, CMS MADE SIMPLE, SMARTY",
+  //   GitHub: "https://github.com/tomi5/LandLab",
+  //   Live: "https://landlab.pl/",
+  // },
   // {
   //   id: 4,
   //   pl: {
