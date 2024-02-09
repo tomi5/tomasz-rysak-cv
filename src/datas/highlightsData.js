@@ -16,8 +16,8 @@ const highlightsData = [
       {
         id: 2,
         name: "email",
-        value: "tomasz.rysak@o2.pl",
-        href: "mailto:tomasz.rysak@o2.pl",
+        value: "tomasz.rysak@gmail.com",
+        href: "mailto:tomasz.rysak@gmail.com",
         ariaLabel: "email",
       },
       {
