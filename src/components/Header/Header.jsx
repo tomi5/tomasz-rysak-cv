@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
+import headerSummaryData from '../../datas/HeaderSummaryData'
 import LangContext from '../../LangContext';
 import myPortait from '../../assets/images/portrait.jpg';
 // styles start
@@ -61,11 +62,6 @@ const PhotoWrapper = styled.div`
 
 // styles end
 
-const headerAbout = {
-  pl: 'Jestem front-end developerem samoukiem. Pierwsze doświadczenie komercyjne na tym stanowisku zdobywałem w firmach Webiso oraz Asco, gdzie z powodzeniem realizowałem powierzone mi projekty. Praca dla Sabre Corporation i tworzenie aplikacji przeznaczonych dla branży lotniczej pozwoliły mi połączyć znajomość branży turstycznej z nabytymi umiejętnościami programistycznymi. Obecnie największą uwagę poświęcam na naukę i rozwój w React.js. Największą satysfakcję w pracy czerpię, kiedy stawiam czoła wyzwaniom, przy których mam okazję rozwijać się i uczyć nowych rzeczy. Doświadczenie i umiejętności miękkie nabyte w pracy w innych branżach z pewnością wnoszą wiele pozytywnych aspektów do zespołu, do którego dołączam. Jestem otwarty na podjęcie współpracy na B2B lub UoP.',
-  en: 'I am a self-taught front-end developer. I gained my first experience on this position at the companies Webiso and Asco, where I successfully implemented the projects I was in charge of. Working for the Sabre Corporation and creating applications for the airline industry allowed me to combine the tourism sector knowledge with the acquired programming skills. Currently, I pay most attention to React.js and I would like to develop in this field. What brings me the most satisfaction at work is constant challenge, opportunity to develop myself and learning new things. My Experience and soft skills acquired at jobs beyond IT branch certainly bring many positive aspects to the team I join. I am open to cooperation on B2B contract or employment contract.',
-};
-
 const headerPhotoDescr = {
   pl: 'zdjęcie portretowe',
   en: 'portrait photo',
@@ -79,7 +75,7 @@ const Header = () => {
       <TextWrapper>
         <Title>Tomasz Rysak</Title>
         <SubTitle>{'< front-end developer />'}</SubTitle>
-        <About>{headerAbout[lang]}</About>
+        <About>{headerSummaryData[lang]}</About>
       </TextWrapper>
       <PhotoWrapper>
         <img

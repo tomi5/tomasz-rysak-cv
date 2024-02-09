@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import LangContext from '../../../../LangContext';
 import ProjectButtons from '../../../Buttons/ProjectButtons'
-import { CompetenceWrapper, CompetenceName, CompetenceDescr } from './styled';
+import { CompetenceName, CompetenceDescr } from './styled';
 
 
 // styles start
