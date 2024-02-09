@@ -84,11 +84,13 @@ const highlightsData = [
             "biegła obsługa CorelDraw",
             "podstawy Visual Basis oraz b.dobra znajomość Excela",
             "Photoshop (cięcie PSD oraz podstawowa obróbka grafiki)",
+            "Figma"
           ],
           en: [
             "fluent in CorelDraw",
             "basic in Visual Basis and fluent in Excel",
             "Photoshop (PSD slicing and basic image processing)",
+            "Figma"
           ],
         },
       },

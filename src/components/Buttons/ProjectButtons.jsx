@@ -31,6 +31,7 @@ const Button = styled.a`
 
 const ProjectButtons = (props) => {
   const linksArr = Object.entries(props);
+  console.log(linksArr)
 
   const links = linksArr.map((link, id) => {
     const name = link[0];
