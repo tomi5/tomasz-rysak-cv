@@ -1,33 +1,33 @@
 const worksData = [
-    {
-        id: 1,
-        pl: {
-            date: "2021.09 - nadal",
-            company: "Sii Polska",
-            position: "Software engineer - B2B",
-            duties: [
-                "realizacja projektów dla klienta Sabre Corporation w tym:",
-                "wdrażanie aplikacji webowej dla branży lotniczej (Digital Workspace),",
-                "wdrażanie aplikacji do obsługi płatności internetowych (SEPG Hosted Payment Page),",
-                "wdrażanie platformy e-commerce dla branży lotniczej oferującej możliwość tworzenia rezerwacji lotniczych oraz późniejsze zarządzanie nimi (EzyCommerce),",
-                "testowanie kodu: testy jednostkowe oraz e2e,",
-                "technologie: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#."
-            ],
-        },
-        en: {
-            date: "2021.09 - ongoing",
-            company: "Sii Poland",
-            position: "Software engineer - B2B",
-            duties: [
-                "working as a contractor for Sabre Cooperation, including:",
-                "developing web application for the airline industry (Digital Workspace),",
-                "developing payment gateway (SEPG Hosted Payment Page),",
-                "developing PWA multi-tenant e-commerce PWA intended for the aviation industry. The platform allows to create and manage flight reservations (EzyCommerce),",
-                "code testing: unit and e2e",
-                "technologies: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#."
-            ],
-        },
+  {
+    id: 1,
+    pl: {
+      date: "2021.09 - nadal",
+      company: "Sii Polska",
+      position: "Software engineer - B2B",
+      duties: [
+        "realizacja projektów dla klienta Sabre Corporation w tym:",
+        "wdrażanie aplikacji webowych dla branży lotniczej (Digital Workspace),",
+        "wdrażanie aplikacji do obsługi płatności internetowych (SEPG Hosted Payment Page),",
+        "wdrażanie platformy e-commerce dla branży lotniczej oferującej możliwość tworzenia rezerwacji lotniczych oraz późniejsze zarządzanie nimi (EzyCommerce),",
+        "testowanie kodu: testy jednostkowe oraz e2e,",
+        "technologie: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#, Java.",
+      ],
     },
+    en: {
+      date: "2021.09 - ongoing",
+      company: "Sii Poland",
+      position: "Software engineer - B2B",
+      duties: [
+        "working as a contractor for Sabre Cooperation, including:",
+        "developing web applications for the airline industry (Digital Workspace),",
+        "developing payment gateway (SEPG Hosted Payment Page),",
+        "developing PWA multi-tenant e-commerce PWA intended for the aviation industry. The platform allows to create and manage flight reservations (EzyCommerce),",
+        "code testing: unit and e2e",
+        "technologies: React.js, Vue.js, Next.js, JavaScript, TypeScript, Redux, Vuex, Jest, Enzyme, TestCafe, Cypress.jo, Playwright, GraphQL, CSS/Sass, Git, Jenkins, TeamCity, C#, Java",
+      ],
+    },
+  },
   {
     id: 2,
     pl: {

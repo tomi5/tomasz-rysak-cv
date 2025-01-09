@@ -57,10 +57,10 @@ const highlightsData = [
           en: "Technologies I use:",
         },
         skillsItem: [
-          "JavaScript",
           "React.js, Vue.js, Next.js",
-          "Redux, Vuex",
           "TypeScript",
+          "JavaScript",
+          "Redux, Vuex",
           "HTML 5",
           "CSS3 (flexbox, grid, BEM), Sass",
           "Bootstrap 4",
@@ -69,7 +69,7 @@ const highlightsData = [
           "Knockout.js",
           "Jenkins, TeamCity",
           "GraphQL - podstawy",
-          "PHP (SMARTY), C#, Python - podstawy",
+          "PHP (SMARTY), C#, Java, Python - podstawy",
         ],
       },
       {
@@ -84,13 +84,13 @@ const highlightsData = [
             "biegła obsługa CorelDraw",
             "podstawy Visual Basis oraz b.dobra znajomość Excela",
             "Photoshop (cięcie PSD oraz podstawowa obróbka grafiki)",
-            "Figma"
+            "Figma",
           ],
           en: [
             "fluent in CorelDraw",
             "basic in Visual Basis and fluent in Excel",
             "Photoshop (PSD slicing and basic image processing)",
-            "Figma"
+            "Figma",
           ],
         },
       },
