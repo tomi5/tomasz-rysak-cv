@@ -65,7 +65,7 @@ const highlightsData = [
           "CSS3 (flexbox, grid, BEM), Sass",
           "Bootstrap 4",
           "Git",
-          "Jest, Enzyme, Playwright, TestCafe, Cypress.jo",
+          "Jest, Enzyme, Playwright, TestCafe, Cypress.io",
           "Knockout.js",
           "Jenkins, TeamCity",
           "GraphQL - podstawy",
