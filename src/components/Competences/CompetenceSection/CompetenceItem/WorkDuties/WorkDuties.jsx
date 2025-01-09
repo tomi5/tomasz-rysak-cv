@@ -17,7 +17,6 @@ const WorkDuties = ({ duty }) => {
   const text = isNewFormat ? duty.text : duty;
   const isSublist = isNewFormat && duty.isSublist;
 
-  console.log(duty);
   return <WorkDuty isSublist={isSublist}>{text}</WorkDuty>;
 };
 

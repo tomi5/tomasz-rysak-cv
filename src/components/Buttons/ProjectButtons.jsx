@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 // styles start
 const ButtonsContainer = styled.div`
@@ -31,7 +31,6 @@ const Button = styled.a`
 
 const ProjectButtons = (props) => {
   const linksArr = Object.entries(props);
-  console.log(linksArr)
 
   const links = linksArr.map((link, id) => {
     const name = link[0];
